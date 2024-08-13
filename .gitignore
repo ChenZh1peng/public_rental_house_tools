@@ -1,0 +1,14 @@
+git_commit前记得删掉key
+
+# macos
+.DS_Store
+
+# logs
+*.log
+
+# cache data
+data/
+
+# python
+__pycache__/
+*.pyc
