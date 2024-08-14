@@ -32,6 +32,7 @@ class HouseTypeLiteral(Enum):
 class TownshipLiteral(Enum):
     """Different codes of towns with values as literal strings
     """
+    UNKNOWN = "未知"
     WEIFANGXINCUN = "潍坊新村街道"
     LUJIAZUI = "陆家嘴街道"
     ZHOUJIADU = "周家渡街道"
@@ -62,6 +63,69 @@ class TownshipLiteral(Enum):
     KANGQIAO = "康桥镇"
     HANGTOU = "航头镇"
     ZHUQIAO = "祝桥镇"
+
+    def parse_code(code):
+        if code == "310115004":
+            return TownshipLiteral.WEIFANGXINCUN
+        if code == "310115005":
+            return TownshipLiteral.LUJIAZUI
+        if code == "310115007":
+            return TownshipLiteral.ZHOUJIADU
+        if code == "310115008":
+            return TownshipLiteral.TANGQIAO
+        if code == "310115009":
+            return TownshipLiteral.SHANGGANGXINCUN
+        if code == "310115010":
+            return TownshipLiteral.NANMATOULU
+        if code == "310115011":
+            return TownshipLiteral.HUDONGXINCUN
+        if code == "310115012":
+            return TownshipLiteral.JINYANGXINCUN
+        if code == "310115013":
+            return TownshipLiteral.YANGJING
+        if code == "310115014":
+            return TownshipLiteral.PUXINGLU
+        if code == "310115015":
+            return TownshipLiteral.DONGMINGLU
+        if code == "310115016":
+            return TownshipLiteral.HUAMU
+        if code == "310115103":
+            return TownshipLiteral.CHUANSHA
+        if code == "310115104":
+            return TownshipLiteral.GAOQIAO
+        if code == "310115105":
+            return TownshipLiteral.BEICAI
+        if code == "310115110":
+            return TownshipLiteral.HEQING
+        if code == "310115114":
+            return TownshipLiteral.TANGZHEN
+        if code == "310115117":
+            return TownshipLiteral.CAOLU
+        if code == "310115120":
+            return TownshipLiteral.JINQIAO
+        if code == "310115121":
+            return TownshipLiteral.GAOXING
+        if code == "310115123":
+            return TownshipLiteral.GAODONG
+        if code == "310115125":
+            return TownshipLiteral.ZHANGJIANG
+        if code == "310115130":
+            return TownshipLiteral.SANLIN
+        if code == "310115131":
+            return TownshipLiteral.HUINAN
+        if code == "310115132":
+            return TownshipLiteral.ZHOUPU
+        if code == "310115133":
+            return TownshipLiteral.XINCHANG
+        if code == "310115134":
+            return TownshipLiteral.DATUAN
+        if code == "310115136":
+            return TownshipLiteral.KANGQIAO
+        if code == "310115137":
+            return TownshipLiteral.HANGTOU
+        if code == "310115139":
+            return TownshipLiteral.ZHUQIAO
+        return TownshipLiteral.UNKNOWN
 
 @unique
 class TownshipCode(Enum):

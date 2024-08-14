@@ -3,6 +3,7 @@ import datetime
 import os
 from .core import Core
 from lib.common_types import RequestType
+from icecream import ic
 
 class PudongGZF():
     """浦东公租房接口类
@@ -82,6 +83,7 @@ class PudongGZF():
             os.mkdir(data_dir)
         
         today = str(datetime.date.today())
+
         filename = "area_" + today + ".json"
         file_path = os.path.join(data_dir, filename)
 
@@ -106,13 +108,33 @@ class PudongGZF():
         if not os.path.exists(data_dir):
             os.mkdir(data_dir)
         
-        today = str(datetime.date.today())
+        today = datetime.date.today()
+        yesterday = str(today - datetime.timedelta(days=1))
+        today = str(today)
+        now = datetime.datetime.now().time()
+        zero_oclock = datetime.time(hour=0, minute=0, second=0)
+        nine_oclock = datetime.time(hour=9, minute=0, second=0)
+        nine_thirty = datetime.time(hour=9, minute=30, second=0)
+        ten_oclock = datetime.time(hour=10, minute=0, second=59)
+        
+        if nine_oclock > now > zero_oclock:
+            print("\033[33m提醒：现在是凌晨，正在使用前一天的房源数据\033[0m")
+        if nine_thirty > now > nine_oclock:
+            print("\033[33m提醒：现在是早上九点后，上一轮选房即将停止，请注意时间，建议十点后再分析一下轮数据。\033[33m")
+        if ten_oclock > now > nine_thirty:
+            print("\033[33m提醒：现在是选房周期更新时间，建议十点后再尝试。\033[33m")
+
         filename = "project_" + today + ".json"
         file_path = os.path.join(data_dir, filename)
 
-        if os.path.exists(file_path) :
-            with open(file_path, 'r', encoding="UTF-8") as f:
-                return json.load(f)
+        if nine_oclock > now > zero_oclock:
+            filename = "project_" + yesterday + ".json"
+            file_path = os.path.join(data_dir, filename)
+
+        if not (ten_oclock > now > nine_oclock):
+            if os.path.exists(file_path) :
+                with open(file_path, 'r', encoding="UTF-8") as f:
+                    return json.load(f)
             
         result = self._project_list()
         
@@ -139,13 +161,33 @@ class PudongGZF():
         if not os.path.exists(data_dir):
             os.mkdir(data_dir)
         
-        today = str(datetime.date.today())
+        today = datetime.date.today()
+        yesterday = str(today - datetime.timedelta(days=1))
+        today = str(today)
+        now = datetime.datetime.now().time()
+        zero_oclock = datetime.time(hour=0, minute=0, second=0)
+        nine_oclock = datetime.time(hour=9, minute=0, second=0)
+        nine_thirty = datetime.time(hour=9, minute=30, second=0)
+        ten_oclock = datetime.time(hour=10, minute=0, second=59)
+        
+        if nine_oclock > now > zero_oclock:
+            print("\033[33m提醒：现在是凌晨，正在使用前一天的房源数据\033[0m")
+        if nine_thirty > now > nine_oclock:
+            print("\033[33m提醒：现在是早上九点后，上一轮选房即将停止，请注意时间，建议十点后再分析一下轮数据。\033[33m")
+        if ten_oclock > now > nine_thirty:
+            print("\033[33m提醒：现在是选房周期更新时间，建议十点后再尝试。\033[33m")
+
         filename = "house_" + today + ".json"
         file_path = os.path.join(data_dir, filename)
 
-        if os.path.exists(file_path) :
-            with open(file_path, 'r', encoding="UTF-8") as f:
-                return json.load(f)
+        if nine_oclock > now > zero_oclock:
+            filename = "project_" + yesterday + ".json"
+            file_path = os.path.join(data_dir, filename)
+
+        if not (ten_oclock > now > nine_oclock):
+            if os.path.exists(file_path) :
+                with open(file_path, 'r', encoding="UTF-8") as f:
+                    return json.load(f)
             
         result = self._house_list(keywords=keywords, project_id=project_id, rent=rent, township=township, type_name=type_name)
         
@@ -165,13 +207,33 @@ class PudongGZF():
         if not os.path.exists(data_dir):
             os.mkdir(data_dir)
         
-        today = str(datetime.date.today())
+        today = datetime.date.today()
+        yesterday = str(today - datetime.timedelta(days=1))
+        today = str(today)
+        now = datetime.datetime.now().time()
+        zero_oclock = datetime.time(hour=0, minute=0, second=0)
+        nine_oclock = datetime.time(hour=9, minute=0, second=0)
+        nine_thirty = datetime.time(hour=9, minute=30, second=0)
+        ten_oclock = datetime.time(hour=10, minute=0, second=59)
+        
+        if nine_oclock > now > zero_oclock:
+            print("\033[33m提醒：现在是凌晨，正在使用前一天的房源数据\033[0m")
+        if nine_thirty > now > nine_oclock:
+            print("\033[33m提醒：现在是早上九点后，上一轮选房即将停止，请注意时间，建议十点后再分析一下轮数据。\033[33m")
+        if ten_oclock > now > nine_thirty:
+            print("\033[33m提醒：现在是选房周期更新时间，建议十点后再尝试。\033[33m")
+            
         filename = "statistic_" + today + ".json"
         file_path = os.path.join(data_dir, filename)
 
-        if os.path.exists(file_path) :
-            with open(file_path, 'r', encoding="UTF-8") as f:
-                return json.load(f)
+        if nine_oclock > now > zero_oclock:
+            filename = "project_" + yesterday + ".json"
+            file_path = os.path.join(data_dir, filename)
+
+        if not (ten_oclock > now > nine_oclock):
+            if os.path.exists(file_path) :
+                with open(file_path, 'r', encoding="UTF-8") as f:
+                    return json.load(f)
             
         result = self._statistic()
         

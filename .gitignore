@@ -1,5 +1,9 @@
 git_commit前记得删掉key
 
+# python
+__pycache__/
+*.pyc
+
 # macos
 .DS_Store
 
@@ -8,7 +12,12 @@ git_commit前记得删掉key
 
 # cache data
 data/
+result/
 
-# python
-__pycache__/
-*.pyc
+# project building
+build/
+dist/
+
+# pyinstaller
+*.spec
+
