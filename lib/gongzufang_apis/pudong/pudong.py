@@ -78,9 +78,9 @@ class PudongGZF():
         Returns:
             str: requests.response.text 详细数据结构见response_sample/area_list.json
         """
-        data_dir = os.path.join(os.getcwd(), "data/pudong")
+        data_dir = os.path.join(os.getcwd(), "data", "pudong")
         if not os.path.exists(data_dir):
-            os.mkdir(data_dir)
+            os.makedirs(data_dir)
         
         today = str(datetime.date.today())
 
@@ -104,9 +104,9 @@ class PudongGZF():
         Returns:
             str: requests.response.text 详细数据结构见response_sample/project_list.json
         """
-        data_dir = os.path.join(os.getcwd(), "data/pudong")
+        data_dir = os.path.join(os.getcwd(), "data", "pudong")
         if not os.path.exists(data_dir):
-            os.mkdir(data_dir)
+            os.makedirs(data_dir)
         
         today = datetime.date.today()
         yesterday = str(today - datetime.timedelta(days=1))
@@ -157,9 +157,9 @@ class PudongGZF():
             str: dict 详细数据结构见response_sample/house_list.json
         """
 
-        data_dir = os.path.join(os.getcwd(), "data/pudong")
+        data_dir = os.path.join(os.getcwd(), "data", "pudong")
         if not os.path.exists(data_dir):
-            os.mkdir(data_dir)
+            os.makedirs(data_dir)
         
         today = datetime.date.today()
         yesterday = str(today - datetime.timedelta(days=1))
@@ -203,9 +203,9 @@ class PudongGZF():
             str: dict 详细数据结构见response_sample/get_statistic_list.json
         """
 
-        data_dir = os.path.join(os.getcwd(), "data/pudong")
+        data_dir = os.path.join(os.getcwd(), "data", "pudong")
         if not os.path.exists(data_dir):
-            os.mkdir(data_dir)
+            os.makedirs(data_dir)
         
         today = datetime.date.today()
         yesterday = str(today - datetime.timedelta(days=1))
@@ -227,7 +227,7 @@ class PudongGZF():
         file_path = os.path.join(data_dir, filename)
 
         if nine_oclock > now > zero_oclock:
-            filename = "project_" + yesterday + ".json"
+            filename = "statistic_" + yesterday + ".json"
             file_path = os.path.join(data_dir, filename)
 
         if not (ten_oclock > now > nine_oclock):

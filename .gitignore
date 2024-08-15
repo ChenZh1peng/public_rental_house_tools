@@ -1,5 +1,3 @@
-git_commit前记得删掉key
-
 # python
 __pycache__/
 *.pyc
@@ -13,6 +11,7 @@ __pycache__/
 # cache data
 data/
 result/
+log/
 
 # project building
 build/
