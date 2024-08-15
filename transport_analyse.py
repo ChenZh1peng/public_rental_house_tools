@@ -14,6 +14,10 @@ from lib.gongzufang_apis.pudong.types import TownshipLiteral
 from sys import exit
 # for pyinstaller compatibility
 import cmath, mmap
+# fix error when using pyinstaller for macos with tqdm
+from multiprocessing import freeze_support
+
+freeze_support()
 
 try:
     with open("config.toml", "rb") as f:
@@ -265,7 +269,7 @@ try:
                     print(f"通勤时间超出限制, 跳过：{each_project_result['name']}")
                     raise ContinueProjectLoop
                 each_project_result['pois'].append(each_poi_result)
-                time.sleep(0.2)
+                # time.sleep(0.2)
 
             transport_time_results.append(each_project_result)
         except ContinueProjectLoop:
