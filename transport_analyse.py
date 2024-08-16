@@ -229,14 +229,14 @@ try:
             if not (30.5 < lon_lat_pair[1] < 32.) or not (120.5 < lon_lat_pair[0] < 122.5):
                 fuck_stupid_staff = True
             if fuck_stupid_staff:
-                # 　　　　　　   ／¯)
+                # 　　　　　　  ／¯)
                 # 　　　　　　 ／ ／
                 # 　　　　　  ／ ／
-                # 　　　_／¯／  ／'¯ )
-                # 　　／／ ／  ／  ／ ('＼
-                # 　（（ （　（  （　 ） )
+                # 　　　_／¯／  ／'¯)
+                # 　  ／／ ／  ／ ／('＼
+                # 　 （（ （　（  （　 ） )
                 # 　　＼　　　　  ＼／ ／
-                # 　　  ＼　　　　　  ／
+                # 　　 ＼　　　　　  ／
                 # 　　　 ＼　　　　 ／
                 # 　　　　＼　　　 ＼ /
                 logger.warning(f"公租房官方数据有误，使用高德数据，建议在官网确认该小区的有效性：{each_project_result['name']}")

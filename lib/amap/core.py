@@ -1,7 +1,6 @@
 """core requests sending module of Amap class
 """
 import requests
-import json
 from lib.utils import join_url
 from lib.common_types import RequestType
 from .types import AmapApiKeyType
@@ -54,7 +53,8 @@ class Core():
             if self.logger:
                 self.logger.error(f"Amap response status is not 200 of path: {path}")
             raise Exception(f"Amap response status is not 200 of path: {path}")
-        return json.loads(response.text) \
+        # return json.loads(response.text) \
+        return response.json() \
             if 'application/json' in response.headers.get('Content-Type') \
             else response.content
         
