@@ -1,14 +1,14 @@
 import tomllib
 import logging
 import os
-import time
 import styleframe.utils
 from tqdm import tqdm
 import json
 import styleframe
 import pandas as pd
 import datetime
-from icecream import ic
+from icecream import ic, install
+install()
 from lib import Amap, PudongGZF
 from lib.gongzufang_apis.pudong.types import TownshipLiteral
 from sys import exit
@@ -18,6 +18,29 @@ import cmath, mmap
 from multiprocessing import freeze_support
 
 freeze_support()
+
+def check_amap_response_code(result):
+    if result['status'] != '1' or result['infocode'] != '10000':
+        if result['infocode'] == '10001':
+            logger.error(f"amap search result error: infocode: {result['infocode']}; status: {result['status']}, info:{result['info']}")
+            print("\033[91m请检查高德地图key是否有效")
+            raise Exception("请检查高德地图key是否有效")
+        elif result['infocode'] == '10003':
+            logger.error(f"amap search result error: infocode: {result['infocode']}; status: {result['status']}, info:{result['info']}")
+            print("\033[91m高德访问量超出日限制，请明日再试")
+            raise Exception("高德访问量超出日限制，请明日再试")
+        elif result['infocode'] == '10021':
+            logger.error(f"amap search result error: infocode: {result['infocode']}; status: {result['status']}, info:{result['info']}")
+            print("\033[91m高德地图并发过大")
+            raise Exception("高德地图并发过大")
+        elif result['infocode'] == '10013':
+            logger.error(f"amap search result error: infocode: {result['infocode']}; status: {result['status']}, info:{result['info']}")
+            print("\033[91m高德地图key被删除，请更换")
+            raise Exception("高德地图key被删除，请更换")
+        else:
+            logger.error(f"amap search result error: infocode: {result['infocode']}; status: {result['status']}, info:{result['info']}")
+            print("\033[91m高德地图搜索接口返回信息出错")
+            raise Exception("amap search result error")
 
 try:
     with open("config.toml", "rb") as f:
@@ -101,27 +124,7 @@ try:
         
         result = amap.search_poi_v2(keywords=keyword, region='021', city_limit=True, show_fields='navi', page_size=5)
 
-        if result['status'] != '1' or result['infocode'] != '10000':
-            if result['infocode'] == '10001':
-                logger.error(f"amap search result error: infocode: {result['infocode']}; status: {result['status']}, info:{result['info']}")
-                print("\033[91m请检查高德地图key是否有效")
-                raise Exception("请检查高德地图key是否有效")
-            elif result['infocode'] == '10003':
-                logger.error(f"amap search result error: infocode: {result['infocode']}; status: {result['status']}, info:{result['info']}")
-                print("\033[91m高德访问量超出日限制，请明日再试")
-                raise Exception("高德访问量超出日限制，请明日再试")
-            elif result['infocode'] == '10021':
-                logger.error(f"amap search result error: infocode: {result['infocode']}; status: {result['status']}, info:{result['info']}")
-                print("\033[91m高德地图并发过大")
-                raise Exception("高德地图并发过大")
-            elif result['infocode'] == '10013':
-                logger.error(f"amap search result error: infocode: {result['infocode']}; status: {result['status']}, info:{result['info']}")
-                print("\033[91m高德地图key被删除，请更换")
-                raise Exception("高德地图key被删除，请更换")
-            else:
-                logger.error(f"amap search result error: infocode: {result['infocode']}; status: {result['status']}, info:{result['info']}")
-                print("\033[91m高德地图搜索接口返回信息出错")
-                raise Exception("amap search result error")
+        check_amap_response_code(result)
         
         result = {
             'select': 0,
@@ -195,27 +198,17 @@ try:
                 'town': None,
                 'pois': []
             }
+
+            # processing each project's name, town name, and coordinates
+            lon_lat_pair = []
             if configs['transport']['all'] == 1:
-                # sometimes wront data presents with LAT, LNG as null, while Parentid is empty string
-                if project['Parentid'] == "" or project['LAT'] == None or project['LNG'] == None:
-                    logger.warning(f"公租房官方数据有误，跳过该小区：{project['Name']}")
-                    print(f"\033[33m提醒：公租房官方数据有误，跳过该小区：{project['Name']}\033[0m")
-                    continue
-                # sometimes they swap the longitude and latitude by mistake
-                if str(project['LNG'])[:3] != '121':
-                    project['LNG'], project['LAT'] = project['LAT'], project['LNG']
-
-                LON_LAT_STR = str(project['LNG']) + ',' + str(project['LAT'])
-
+                lon_lat_pair.append(project["LNG"])
+                lon_lat_pair.append(project['LAT'])
                 each_project_result['name'] = project['Name']
                 each_project_result['town'] = TownshipLiteral.parse_code(project['Parentid']).value
-
             elif configs['transport']['all'] == 0:
-                if str(project['longitude'])[:3] != '121':
-                    project['longitude'], project['latitude'] = project['latitude'], project['longitude']
-
-                LON_LAT_STR = str(project['longitude']) + ',' + str(project['latitude'])
-
+                lon_lat_pair.append(project["longitude"])
+                lon_lat_pair.append(project['latitude'])
                 each_project_result['name'] = project['name']
                 each_project_result['town'] = project['townshipName']
             else:
@@ -223,6 +216,36 @@ try:
                 print("\033[“all”字段值只能为0或1")
                 raise ValueError(f"transport.all in config should not be {configs['transport']['all']}")
 
+            # fix pudong gzf's stupid error aboud coordinates and assemble the lon-lat string asked by amap
+            # sometimes wront data presents with LAT, LNG as null, while Parentid is empty string
+            fuck_stupid_staff = False  # 🖕🖕🖕
+            if lon_lat_pair[0] == None or lon_lat_pair[1] == None:
+                fuck_stupid_staff = True
+            # sometimes they swap the longitude and latitude by mistake
+            if (30.5 < lon_lat_pair[0] < 32.) and (120.5 < lon_lat_pair[1] < 122.5):
+                lon_lat_pair[0], lon_lat_pair[1] = lon_lat_pair[1],lon_lat_pair[0]
+                # though flag is False, still fuck stupid staff
+            # sometimes lon and lat is set to 0
+            if not (30.5 < lon_lat_pair[1] < 32.) or not (120.5 < lon_lat_pair[0] < 122.5):
+                fuck_stupid_staff = True
+            if fuck_stupid_staff:
+                # 　　　　　　   ／¯)
+                # 　　　　　　 ／ ／
+                # 　　　　　  ／ ／
+                # 　　　_／¯／  ／'¯ )
+                # 　　／／ ／  ／  ／ ('＼
+                # 　（（ （　（  （　 ） )
+                # 　　＼　　　　  ＼／ ／
+                # 　　  ＼　　　　　  ／
+                # 　　　 ＼　　　　 ／
+                # 　　　　＼　　　 ＼ /
+                logger.warning(f"公租房官方数据有误，使用高德数据，建议在官网确认该小区的有效性：{each_project_result['name']}")
+                print(f"\033[33m提醒：公租房官方数据有误，使用高德数据，建议在官网确认该小区的有效性：{each_project_result['name']}\033[0m")
+
+                amap_search_result = get_keyword_search_result(each_project_result['name'])
+                LON_LAT_STR = amap_search_result['pois'][amap_search_result['select']]['location']
+            else:
+                LON_LAT_STR = str(lon_lat_pair[0]) + ',' + str(lon_lat_pair[1])
 
             for poi in poi_infos:
                 route_result = amap.transit_integrated_direction_v2(LON_LAT_STR,
@@ -232,27 +255,7 @@ try:
                                                                     night_flag=configs['transport']['night'],
                                                                     time=configs['transport']['time'],
                                                                     show_fields='cost')
-                if route_result['status'] != '1' or route_result['infocode'] != '10000':
-                    if route_result['infocode'] == '10001':
-                        logger.error(f"amap search result error: infocode: {route_result['infocode']}; status: {route_result['status']}, info:{route_result['info']}")
-                        print("\033[91m请检查高德地图key是否有效")
-                        raise Exception("请检查高德地图key是否有效")
-                    elif route_result['infocode'] == '10003':
-                        logger.error(f"amap search result error: infocode: {route_result['infocode']}; status: {route_result['status']}, info:{route_result['info']}")
-                        print("\033[91m高德访问量超出日限制，请明日再试")
-                        raise Exception("高德访问量超出日限制，请明日再试")
-                    elif route_result['infocode'] == '10021':
-                        logger.error(f"amap search result error: infocode: {route_result['infocode']}; status: {route_result['status']}, info:{route_result['info']}")
-                        print("\033[91m高德地图并发过大")
-                        raise Exception("高德地图并发过大")
-                    elif route_result['infocode'] == '10013':
-                        logger.error(f"amap search result error: infocode: {route_result['infocode']}; status: {route_result['status']}, info:{route_result['info']}")
-                        print("\033[91m高德地图key被删除，请更换")
-                        raise Exception("高德地图key被删除，请更换")
-                    else:
-                        logger.error(f"amap search result error: infocode: {route_result['infocode']}; status: {route_result['status']}, info:{route_result['info']}")
-                        print("\033[91m高德地图搜索接口返回信息出错")
-                        raise Exception("amap search result error")
+                check_amap_response_code(route_result)
                 
                 route_result = route_result['route']['transits'][0]
 
@@ -265,8 +268,8 @@ try:
                 each_poi_result['segments_description'] = convert_segments(route_result['segments'])
 
                 if poi['time_limit'] >= 0 and each_poi_result['cost_min'] > poi['time_limit']:
-                    logger.info(f"通勤时间超出限制, 跳过：{each_project_result['name']}")
-                    print(f"通勤时间超出限制, 跳过：{each_project_result['name']}")
+                    logger.info(f"通勤时间({each_poi_result['cost_min']}分钟)超出【{poi['name']}】限制, 跳过：{each_project_result['name']}")
+                    print(f"通勤时间({each_poi_result['cost_min']}分钟)超出【{poi['name']}】限制, 跳过：{each_project_result['name']}")
                     raise ContinueProjectLoop
                 each_project_result['pois'].append(each_poi_result)
                 # time.sleep(0.2)

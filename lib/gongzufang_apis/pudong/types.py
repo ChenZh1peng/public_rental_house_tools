@@ -64,7 +64,8 @@ class TownshipLiteral(Enum):
     HANGTOU = "航头镇"
     ZHUQIAO = "祝桥镇"
 
-    def parse_code(code):
+    @classmethod
+    def parse_code(cls, code):
         if code == "310115004":
             return TownshipLiteral.WEIFANGXINCUN
         if code == "310115005":
