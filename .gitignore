@@ -16,3 +16,6 @@ log/
 # project building
 build/
 dist/
+
+# local env
+.env

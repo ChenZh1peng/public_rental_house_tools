@@ -1,7 +1,6 @@
 import tomllib
 import logging
 import os
-import styleframe.utils
 from tqdm import tqdm
 import json
 import styleframe
@@ -10,6 +9,7 @@ import datetime
 from icecream import ic, install
 install()
 from lib import Amap, PudongGZF
+from lib.utils import get_keyword_search_result, check_amap_response_code
 from lib.gongzufang_apis.pudong.types import TownshipLiteral
 from sys import exit
 # for pyinstaller compatibility
@@ -18,29 +18,6 @@ import cmath, mmap
 from multiprocessing import freeze_support
 
 freeze_support()
-
-def check_amap_response_code(result):
-    if result['status'] != '1' or result['infocode'] != '10000':
-        if result['infocode'] == '10001':
-            logger.error(f"amap search result error: infocode: {result['infocode']}; status: {result['status']}, info:{result['info']}")
-            print("\033[91m请检查高德地图key是否有效")
-            raise Exception("请检查高德地图key是否有效")
-        elif result['infocode'] == '10003':
-            logger.error(f"amap search result error: infocode: {result['infocode']}; status: {result['status']}, info:{result['info']}")
-            print("\033[91m高德访问量超出日限制，请明日再试")
-            raise Exception("高德访问量超出日限制，请明日再试")
-        elif result['infocode'] == '10021':
-            logger.error(f"amap search result error: infocode: {result['infocode']}; status: {result['status']}, info:{result['info']}")
-            print("\033[91m高德地图并发过大")
-            raise Exception("高德地图并发过大")
-        elif result['infocode'] == '10013':
-            logger.error(f"amap search result error: infocode: {result['infocode']}; status: {result['status']}, info:{result['info']}")
-            print("\033[91m高德地图key被删除，请更换")
-            raise Exception("高德地图key被删除，请更换")
-        else:
-            logger.error(f"amap search result error: infocode: {result['infocode']}; status: {result['status']}, info:{result['info']}")
-            print("\033[91m高德地图搜索接口返回信息出错")
-            raise Exception("amap search result error")
 
 try:
     with open("config.toml", "rb") as f:
@@ -100,42 +77,6 @@ try:
 
     poi_infos = []
 
-    def get_keyword_search_result(keyword):
-        """get result from file cache or amap api
-
-        Args:
-            keyword (str): keyword to search for
-
-        Raises:
-            Exception: request fail
-
-        Returns:
-            dict: result with a idx called 'select' indicates with poi to select
-        """
-        data_dir = os.path.join(os.getcwd(), "data", "pudong")
-        if not os.path.exists(data_dir):
-            os.makedirs(data_dir)
-        filename = keyword + '.json'
-        file_path = os.path.join(data_dir, filename)
-
-        if os.path.exists(file_path) :
-            with open(file_path, 'r', encoding="UTF-8") as f:
-                return json.load(f)
-        
-        result = amap.search_poi_v2(keywords=keyword, region='021', city_limit=True, show_fields='navi', page_size=5)
-
-        check_amap_response_code(result)
-        
-        result = {
-            'select': 0,
-            "pois": result['pois']
-        }
-
-        with open(file_path, 'w', encoding="UTF-8") as f:
-                f.writelines(json.dumps(result, ensure_ascii=False, indent=4))
-
-        return result
-
     def convert_segments(amap_segments_list):
         """convert amap segments list structure to a paragraph of description.
 
@@ -171,7 +112,7 @@ try:
 
         poi_info = {"search_keyword": poi_name, "time_limit": time_limit}
 
-        amap_search_result = get_keyword_search_result(poi_name)
+        amap_search_result = get_keyword_search_result(amap, poi_name, logger)
         poi_result = amap_search_result['pois'][amap_search_result['select']]
 
         poi_info.update({
@@ -242,7 +183,7 @@ try:
                 logger.warning(f"公租房官方数据有误，使用高德数据，建议在官网确认该小区的有效性：{each_project_result['name']}")
                 print(f"\033[33m提醒：公租房官方数据有误，使用高德数据，建议在官网确认该小区的有效性：{each_project_result['name']}\033[0m")
 
-                amap_search_result = get_keyword_search_result(each_project_result['name'])
+                amap_search_result = get_keyword_search_result(amap, each_project_result['name'], logger)
                 LON_LAT_STR = amap_search_result['pois'][amap_search_result['select']]['location']
             else:
                 LON_LAT_STR = str(lon_lat_pair[0]) + ',' + str(lon_lat_pair[1])
@@ -255,7 +196,7 @@ try:
                                                                     night_flag=configs['transport']['night'],
                                                                     time=configs['transport']['time'],
                                                                     show_fields='cost')
-                check_amap_response_code(route_result)
+                check_amap_response_code(route_result, logger)
                 
                 route_result = route_result['route']['transits'][0]
 

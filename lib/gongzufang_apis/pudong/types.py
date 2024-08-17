@@ -6,27 +6,47 @@ from enum import Enum, unique
 class HouseTypeNum(Enum):
     """Different types of rooms with vaulse as number string
     """
-    YISHI = "1"
-    YISHIYITING = "2"
-    LIANGSHI = "3"
-    LIANGSHIYITING = "4"
-    SANSHI = "5"
-    SANSHIYITING = "6"
-    SISHI = "7"
-    WUSHI = "8"
+    YISHI = 1
+    YISHIYITING = 2
+    LIANGSHI = 3
+    LIANGSHIYITING = 4
+    SANSHI = 5
+    SANSHIYITING = 6
+    SISHI = 7
+    WUSHI = 8
 
 @unique
 class HouseTypeLiteral(Enum):
     """Different types of rooms with values as literal strings
     """
-    YISHI = "1"
-    YISHIYITING = "2"
-    LIANGSHI = "3"
-    LIANGSHIYITING = "4"
-    SANSHI = "5"
-    SANSHIYITING = "6"
-    SISHI = "7"
-    WUSHI = "8"
+    YISHI = "一室"
+    YISHIYITING = "一室一厅"
+    LIANGSHI = "两室"
+    LIANGSHIYITING = "两室一厅"
+    SANSHI = "三室"
+    SANSHIYITING = "三室一厅"
+    SISHI = "四室"
+    WUSHI = "五室"
+
+    @classmethod
+    def parse_code(cls, code):
+        if code == 1:
+            return HouseTypeLiteral.YISHI
+        if code == 2:
+            return HouseTypeLiteral.YISHIYITING
+        if code == 3:
+            return HouseTypeLiteral.LIANGSHI
+        if code == 4:
+            return HouseTypeLiteral.LIANGSHIYITING
+        if code == 5:
+            return HouseTypeLiteral.SANSHI
+        if code == 6:
+            return HouseTypeLiteral.SANSHIYITING
+        if code == 7:
+            return HouseTypeLiteral.SISHI
+        if code == 8:
+            return HouseTypeLiteral.WUSHI
+        raise ValueError(f"unknown house type code: {code}")
 
 @unique
 class TownshipLiteral(Enum):
