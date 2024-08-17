@@ -222,11 +222,11 @@ try:
             if lon_lat_pair[0] == None or lon_lat_pair[1] == None:
                 fuck_stupid_staff = True
             # sometimes they swap the longitude and latitude by mistake
-            if (30.5 < lon_lat_pair[0] < 32.) and (120.5 < lon_lat_pair[1] < 122.5):
+            elif (30.5 < lon_lat_pair[0] < 32.) and (120.5 < lon_lat_pair[1] < 122.5):
                 lon_lat_pair[0], lon_lat_pair[1] = lon_lat_pair[1],lon_lat_pair[0]
                 # though flag is False, still fuck stupid staff
             # sometimes lon and lat is set to 0
-            if not (30.5 < lon_lat_pair[1] < 32.) or not (120.5 < lon_lat_pair[0] < 122.5):
+            elif not (30.5 < lon_lat_pair[1] < 32.) or not (120.5 < lon_lat_pair[0] < 122.5):
                 fuck_stupid_staff = True
             if fuck_stupid_staff:
                 # 　　　　　　  ／¯)
