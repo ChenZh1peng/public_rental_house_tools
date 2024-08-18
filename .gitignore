@@ -19,3 +19,7 @@ dist/
 
 # local env
 .env
+
+# upx binarys
+/build_scripts/upx/*/
+/build_scripts/upx/*upx*
