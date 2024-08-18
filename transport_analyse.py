@@ -107,8 +107,20 @@ try:
 
 
         return return_string
+    
+    # prepare poi and time limit list
+    poi_config_list = configs['transport']['poi']
+    time_limit_config_list = configs['transport']['time_limit']
+    n1 = len(poi_config_list)
+    n2 = len(time_limit_config_list)
+    if n2 == n1:
+        pass
+    elif n2 < n1:
+        time_limit_config_list.extend([-1] * (n1 - n2))
+    else:
+        time_limit_config_list = time_limit_config_list[:n1]
 
-    for poi_name, time_limit in zip(configs['transport']['poi'], configs['transport']['time_limit']):
+    for poi_name, time_limit in zip(poi_config_list, time_limit_config_list):
 
         poi_info = {"search_keyword": poi_name, "time_limit": time_limit}
 
@@ -116,7 +128,7 @@ try:
         poi_result = amap_search_result['pois'][amap_search_result['select']]
 
         poi_info.update({
-            "lon_lat_str": poi_result['navi']['entr_location'] or poi_result['navi']['exit_location'] or poi_result['location'],
+            "lon_lat_str": poi_result['navi']['entr_location'] if 'entr_location' in poi_result['navi'].keys() else poi_result['navi']['exit_location'] if 'exit_location' in poi_result['navi'].keys() else poi_result['location'],
             "name": poi_result['name'],
         })
 
