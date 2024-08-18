@@ -14,6 +14,8 @@ from tqdm import tqdm
 # fix error when using pyinstaller for macos with tqdm
 from multiprocessing import freeze_support
 
+freeze_support()
+
 def push_subscription_message(total_num, houses):
     """send a message to everyone in the config file settings by WxPusher. https://wxpusher.zjiecode.com/docs/#/?id=send-msg
         if needing more apis of WxPusehr, consider use their sdk. https://github.com/wxpusher/wxpusher-client
@@ -23,7 +25,7 @@ def push_subscription_message(total_num, houses):
     if len(houses) == 0:
         message = "<h1 style=\"background-color: #33ff99\">再等等看，好房子会有的！！！🏡🍜🐕🐈🙆‍♂️🙆‍♀️</h1>"
     else:
-        message = f"<h1 style=\"background-color: #ff6600\">今日共有{total_num}房源上架，其中你关注的有【{len(houses)}】个</h1><br>"
+        message = f"<h1 style=\"background-color: #ff6600\">今日共有{total_num}房源上架，其中你关注的有【{len(houses)}】个🎉🎉</h1><br>"
         for house in houses:
             message += f"<ul style=\"font-size: 1.4rem;\"><li style=\"background-color: #33ff99\">{house['name']}</li><li>门牌号：{house['plate']}</li><li style=\"font-weight:bold\">面积：{house['area']}</li><li>户型：{house['type']}</li><li style=\"font-weight:bold\">租金：{house['rent']}</li><li>朝向：{house['towards']}</li>"
             if 'transport' in house.keys():
@@ -86,7 +88,7 @@ logger = logging.getLogger("project_subscription")
 logger.setLevel(level)
 formatter = logging.Formatter("%(asctime)s - %(levelname)s - %(message)s")
 stream_handler = logging.StreamHandler()
-stream_handler.setLevel(level)
+stream_handler.setLevel(logging.INFO)
 stream_handler.setFormatter(formatter)
 file_handler = logging.FileHandler(filename=log_path, mode='a',encoding='utf8')
 file_handler.setLevel(level)
@@ -190,7 +192,7 @@ if configs['subscription']['mode'] == 0 or configs['subscription']['mode'] == 2:
                 if 'transport' in result_list[0].keys():
                     for item in house['transport']:
                         data[item['name']].append(item['cost_min'])
-            return pd.DataFrame(ic(data))
+            return pd.DataFrame(data)
         df = df_parse(result)
         dt = str(datetime.datetime.now()).replace(' ', '_').replace(':', "-")
         output_root = os.path.join(os.getcwd(), 'result')
