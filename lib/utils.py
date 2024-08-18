@@ -84,3 +84,60 @@ def check_amap_response_code(result, logger=None):
                 logger.error(f"amap search result error: infocode: {result['infocode']}; status: {result['status']}, info:{result['info']}")
             print("\033[91m高德地图搜索接口返回信息出错")
             raise Exception("amap search result error")
+        
+def match_name_token_in_string(name: str, string: str) -> bool: 
+    """break name into tokens by some rules, then tell if all tokens shows up in the string
+    """
+    word_list = []
+    token_list = []
+    # break by breakers
+    breakers = ["(", ")", "（", "）", "/", "\\", "-", "_", "-", "—", "[", "]", "【", "】", "弄", "号", " ", "\t"]
+
+    temp_str = ""
+    for char in name:
+        if char in breakers:
+            if temp_str != "":
+                word_list.append(temp_str)
+                temp_str = ""
+        else:
+            temp_str += char
+
+    # break by number/character difference
+    temp_str = ""
+    numbers = '0123456789'
+    last = -1 # -1: initial state, 0: last character is numeric, 1: last character is a non-numeric character
+    for word in word_list:
+        for char in word:
+            if last == -1:
+                if char in numbers:
+                    last = 0
+                else:
+                    last = 1
+                temp_str += char
+            else:
+                if char in numbers and last != 0:
+                    token_list.append(temp_str)
+                    temp_str = char
+                    last = 0
+                    continue
+                if char not in numbers and last != 1:
+                    token_list.append(temp_str)
+                    temp_str = char
+                    last = 1
+                    continue
+                temp_str += char
+        last = -1
+        token_list.append(temp_str)
+        temp_str = ""
+    
+    # check every token
+    for token in token_list:
+        if token not in string:
+            return False
+    return True
+
+if __name__ == "__main__":
+    from icecream import ic
+    ic(match_name_token_in_string("妙川路800弄（川沙博景苑）", "妙川路800弄（川沙博景苑）/112号/5楼/503"))
+    ic(match_name_token_in_string("妙川路800弄（川沙博景苑）", "妙川路800弄（川沙博景苑）"))
+

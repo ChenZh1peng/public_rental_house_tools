@@ -6,7 +6,7 @@ import os
 from sys import exit
 import requests
 from lib import PudongGZF, Amap
-from lib.utils import get_keyword_search_result, check_amap_response_code
+from lib.utils import get_keyword_search_result, check_amap_response_code, match_name_token_in_string
 from lib.gongzufang_apis.pudong.types import HouseTypeLiteral
 import pandas as pd, styleframe
 import datetime
@@ -108,7 +108,7 @@ houses = pudong.house_list()['data']['data']
 result = []
 for sub_name in configs['subscription']['pudong']['house']:
     for house in houses:
-        if sub_name in house['fullName'] or sub_name in house['project']['name']:
+        if match_name_token_in_string(sub_name, house['fullName']) or match_name_token_in_string(sub_name, house['project']['name']):
             result.append({
                 "name": house['fullName'],
                 "towards": house['toward'] or "未知",
@@ -139,7 +139,7 @@ for poi_name in configs['transport']['poi']:
     poi_result = amap_search_result['pois'][amap_search_result['select']]
 
     poi_info.update({
-        "lon_lat_str": poi_result['navi']['entr_location'] or poi_result['navi']['exit_location'] or poi_result['location'],
+        "lon_lat_str": poi_result['navi']['entr_location'] if 'entr_location' in poi_result['navi'].keys() else poi_result['navi']['exit_location'] if 'exit_location' in poi_result['navi'].keys() else poi_result['location'],
     })
 
     pois.append(poi_info)
@@ -147,7 +147,7 @@ for poi_name in configs['transport']['poi']:
 for item in tqdm(result, total=len(result), desc="正在处理今日关注房源"):
     item_search_result = get_keyword_search_result(amap, item['name'], logger)
     item_search_result = item_search_result['pois'][item_search_result['select']]
-    item_lon_lat_str = item_search_result['navi']['entr_location'] or item_search_result['navi']['exit_location'] or item_search_result['location']
+    item_lon_lat_str = item_search_result['navi']['entr_location'] if 'entr_location' in item_search_result['navi'].keys() else item_search_result['navi']['exit_location'] if 'exit_location' in item_search_result['navi'].keys() else item_search_result['location']
     for poi in pois:
         route_result = amap.transit_integrated_direction_v2(item_lon_lat_str,
                                                             poi['lon_lat_str'],
