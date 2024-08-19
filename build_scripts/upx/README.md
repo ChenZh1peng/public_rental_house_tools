@@ -1,6 +1,5 @@
-# How to get upx executives
+# 怎么使用upx可执行文件
 
-get them from github release according to your os, then put them under this directory
-remenber to uncomment the lines in building scripts before you try upx
+根据系统版本，从下面的github链接的release页面下载最新版本的压缩包，解压后放在本文件夹(build_scripts/upx)下, 然后按各脚本内的说明修改对应参数到正确的upx路径。
 
-Github page: <https://github.com/upx/upx>
+Github页面: <https://github.com/upx/upx>
