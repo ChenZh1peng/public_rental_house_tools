@@ -88,7 +88,6 @@
 
   ![](/pics/wxpusher.png)
 
-
 3. 将token和uid按要求填入config.toml文件中[wx_pusher]部分
 
 ## 源码打包成可执行文件
