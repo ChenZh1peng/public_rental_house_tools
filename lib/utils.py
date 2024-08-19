@@ -101,7 +101,8 @@ def match_name_token_in_string(name: str, string: str) -> bool:
                 temp_str = ""
         else:
             temp_str += char
-
+    if temp_str != "":
+        word_list.append(temp_str)
     # break by number/character difference
     temp_str = ""
     numbers = '0123456789'
