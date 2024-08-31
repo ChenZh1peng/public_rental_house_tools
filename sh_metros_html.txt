@@ -1,0 +1,516 @@
+
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>上海地铁线路图，2024最新上海地铁线路图，上海地铁地图-上海本地宝</title>
+<meta content="上海地铁线路图,2024上海地铁最新线路图,上海地铁地图" name="Keywords" />
+<meta content="上海本地宝交通频道为你带来上海地铁线路图，2024上海地铁最新线路图的详细信息" name="Description" />
+
+<meta name="location" content="province=上海;city=上海;coord=121.487899,31.249162" />
+
+<link rel="stylesheet" href="https://jtapi.bendibao.com/ditie_m/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://jtapi.bendibao.com/ditie_m/css/bdb-pad-dt-line.css">
+
+</head>
+
+<body>
+
+<!-- NAV START -->
+
+
+<!-- 移动顶部 -->
+<script src="http://m.bendibao.com/touch/show.js"></script>
+<script type="text/javascript">
+showtop1();
+</script>
+
+<script type="text/javascript">
+    function fold() {
+        document.getElementById('menu').style.display == 'block' ? document.getElementById('menu').style.display = 'none' : document.getElementById('menu').style.display = 'block';
+    }
+
+    function list() {
+        document.getElementById('menu').style.display == 'block' ? document.getElementById('menu').style.display = 'none' : document.getElementById('menu').style.display = 'block';
+    }
+    function collapse(i) {
+        var v = document.getElementById(i).style;
+        v.display == "none" ? v.display = "block" : v.display = "none";
+    }
+	
+</script>
+
+<nav>
+	<ul class="topnav">
+		<li class="home"><a href="/" ></a></li>
+		<li class="list"><a class="listmenu" onClick="fold();"></a>
+		</li>
+		<li class="title"><a href="/">上海</a>
+		</li>
+	</ul>
+	<div class="clearfix"></div>
+	<div id="menu" style="clear:both;display:none;">
+		<ul class="menu"><li><a href="http://m.sh.bendibao.com/news/">资讯</a></li><li><a href="http://m.sh.bendibao.com/tour/">旅游</a></li><li><a href="http://m.sh.bendibao.com/zffw/">办事</a></li><li><a href="http://m.sh.bendibao.com/traffic/">交通</a></li><li><a href="http://m.sh.bendibao.com/fangchan/">房产</a></li><li><a href="http://m.sh.bendibao.com/youhui/">特惠</a></li><li class="nav-z"> <a href="http://m.sh.bendibao.com/z/" target="_blank">专题</a> <li> <li class="nav-wangdian"><a href="http://m.sh.bendibao.com/wangdian/" target="_blank">网点</a> </li><li class="nav-jingdian"> <a href="http://m.sh.bendibao.com/jingdian/" target="_blank">景点</a> </li><li class="nav-bus"> <a href="http://m.sh.bendibao.com/bus/" target="_blank">公交</a> </li><li class="nav-keche"> <a href="http://m.sh.bendibao.com/keche/" target="_blank">客车</a> </li><li class="nav-map" > <a href="http://m.sh.bendibao.com/map/" target="_blank">地图</a> </li><li class="nav-ditie"><a href="/ditie/">地铁</a></li><li class="nav-tianqi"><a href="http://m.sh.bendibao.com/tianqi/" target="_blank">天气</a> </li><li class="clearfix"></li></ul>
+<script type="text/javascript">
+ var ua = navigator.userAgent.toLowerCase();
+ var _this_url=window.location.href;
+ if(_this_url.indexOf("people")>-1){
+	var _this_Obj=document.getElementsByClassName("title")[0].childNodes[0];
+   _this_Obj.style.backgroundImage="url(http://imgbdb3.bendibao.com/img/logo_people.png)";
+   _this_Obj.style.backgroundPosition="0px 4px";
+   _this_Obj.style.width="230px";
+   _this_Obj.style.backgroundSize="75%";
+ }
+ 
+</script>
+
+
+	</div>
+    
+    <div class="breadcrumb" style="clear:both;">
+          <a href="/">上海本地宝</a>&gt;
+          
+          
+          
+          <a href="/jt/">交通</a>&gt;
+          
+          
+          
+          <a href="/ditie/">地铁</a>
+      </div>
+    
+</nav>
+
+<div style="height:5px"></div>
+
+
+<!-- NAV END -->
+
+
+<div class="cnt">
+	<div class="row">
+	    <div class="col-xs-12 hot">上海地铁查询<span class="caret"></span></div>
+	    
+	    <div id="subnav">
+	            	<div class="col-xs-4 col-sm-3 col-md-2"><a rel="menu" href="/ditie/">地铁首页</a></div>
+	            	<div class="col-xs-4 col-sm-3 col-md-2"><a href="/ditie/linemap.shtml">线路图</a></div>
+	                <div class="col-xs-4 col-sm-3 col-md-2"><a href="/ditie/exit.shtml">出入口</a></div>
+	                <div class="col-xs-4 col-sm-3 col-md-2"><a href="/ditie/time.shtml">时刻表</a></div>
+	                <div class="col-xs-4 col-sm-3 col-md-2"><a href="/ditie/plan.shtml">地铁规划</a></div>
+	                <div class="col-xs-4 col-sm-3 col-md-2"><a href="/ditie/bus.shtml">公交换乘</a></div>
+		</div>
+	    
+	</div> <!-- .row END --> 								
+	<div class="line-pic">
+		<h1 class="pic-title">上海地铁线路图（点击下方图片查看高清大图）</h1>
+		
+		<a href="https://jtapi.bendibao.com/ditie_m/inc/sh/xianluda.gif?2024082802"><img src="https://jtapi.bendibao.com/ditie_m/inc/sh/xianlu.gif?2024082802" class="img-responsive" border="0" /></a>
+		
+	</div>
+
+
+
+
+<!-- 线路-->
+			<div class="line-list">
+				<div class="list-title"><a href="/ditie/xl_223.shtml">地铁1号线运营时间</a></div>
+				<ul class="station-li" style="list-style: none">
+				
+				  <li><a href="/ditie/zd_fujinlu.shtml">富锦路</a></li> <li><a href="/ditie/zd_youyixilu.shtml">友谊西路</a></li> <li><a href="/ditie/zd_baoangonglu.shtml">宝安公路</a></li> <li><a href="/ditie/zd_gongfuxincun.shtml">共富新村</a></li> <li><a href="/ditie/zd_hulanlu.shtml">呼兰路</a></li> <li><a href="/ditie/zd_tonghexincun.shtml">通河新村</a></li> <li><a href="/ditie/zd_gongkanglu.shtml">共康路</a></li> <li><a href="/ditie/zd_pengpuxincun.shtml">彭浦新村</a></li> <li><a href="/ditie/zd_wenshuilu.shtml">汶水路</a></li> <li><a href="/ditie/zd_shanghaimaeicheng.shtml">上海马戏城</a></li> <li><a href="/ditie/zd_yanchanglu.shtml">延长路</a></li> <li><a href="/ditie/zd_zhongshanbeilu.shtml">中山北路</a></li> <li><a href="/ditie/zd_shanghaihuochezhan.shtml">上海火车站</a></li> <li><a href="/ditie/zd_hanzhonglu.shtml">汉中路</a></li> <li><a href="/ditie/zd_xingadlu.shtml">新闸路</a></li> <li><a href="/ditie/zd_renminguangchang.shtml">人民广场</a></li> <li><a href="/ditie/zd_huangbeinanlu.shtml">黄陂南路</a></li> <li><a href="/ditie/zd_shanxinanlu.shtml">陕西南路</a></li> <li><a href="/ditie/zd_changshulu.shtml">常熟路</a></li> <li><a href="/ditie/zd_hengshanlu.shtml">衡山路</a></li> <li><a href="/ditie/zd_xujiahui.shtml">徐家汇</a></li> <li><a href="/ditie/zd_shanghaitiyuguan.shtml">上海体育馆</a></li> <li><a href="/ditie/zd_caobaolu.shtml">漕宝路</a></li> <li><a href="/ditie/zd_shanghainanzhan.shtml">上海南站</a></li> <li><a href="/ditie/zd_jinjiangleyuan.shtml">锦江乐园</a></li> <li><a href="/ditie/zd_lianhualu.shtml">莲花路</a></li> <li><a href="/ditie/zd_waihuanlu.shtml">外环路</a></li> <li><a href="/ditie/zd_xinzhuang.shtml">莘庄</a></li>
+				
+				</ul>
+				<div style="clear:both"></div>
+				<p style="margin:10px 0 0 15px;font-size: 12px;color:#009393;">运营时间:(富锦路 5:30-22:30 | 莘庄 5:30-22:32）</p>
+				<div style="clear:both"></div>
+			</div>
+<!-- 线路结束-->
+
+
+
+<!-- 线路-->
+			<div class="line-list">
+				<div class="list-title"><a href="/ditie/xl_224.shtml">地铁2号线运营时间</a></div>
+				<ul class="station-li" style="list-style: none">
+				
+				  <li><a href="/ditie/zd_xujingdong.shtml">徐泾东</a></li> <li><a href="/ditie/zd_hongqiaohuochezhan.shtml">虹桥火车站</a></li> <li><a href="/ditie/zd_hongqiao2haohangzhanlou.shtml">虹桥2号航站楼</a></li> <li><a href="/ditie/zd_songhonglu.shtml">淞虹路</a></li> <li><a href="/ditie/zd_beixinjing.shtml">北新泾</a></li> <li><a href="/ditie/zd_weininglu.shtml">威宁路</a></li> <li><a href="/ditie/zd_loushanguanlu.shtml">娄山关路</a></li> <li><a href="/ditie/zd_zhongshangongyuan.shtml">中山公园</a></li> <li><a href="/ditie/zd_jiangsulu.shtml">江苏路</a></li> <li><a href="/ditie/zd_jingansi.shtml">静安寺</a></li> <li><a href="/ditie/zd_nanjingxilu.shtml">南京西路</a></li> <li><a href="/ditie/zd_renminguangchang.shtml">人民广场</a></li> <li><a href="/ditie/zd_nanjingdonglu.shtml">南京东路</a></li> <li><a href="/ditie/zd_lujiazui.shtml">陆家嘴</a></li> <li><a href="/ditie/zd_dongchanglu.shtml">东昌路</a></li> <li><a href="/ditie/zd_shijidadao.shtml">世纪大道</a></li> <li><a href="/ditie/zd_shanghaikejiguan.shtml">上海科技馆</a></li> <li><a href="/ditie/zd_shijigongyuan.shtml">世纪公园</a></li> <li><a href="/ditie/zd_longyanglu.shtml">龙阳路</a></li> <li><a href="/ditie/zd_zhangjianggaoke.shtml">张江高科</a></li> <li><a href="/ditie/zd_jinkelu.shtml">金科路</a></li> <li><a href="/ditie/zd_guanglanlu.shtml">广兰路</a></li> <li><a href="/ditie/zd_tangzhen.shtml">唐镇</a></li> <li><a href="/ditie/zd_chuangxinzhonglu.shtml">创新中路</a></li> <li><a href="/ditie/zd_huaxiadonglu.shtml">华夏东路</a></li> <li><a href="/ditie/zd_chuansha.shtml">川沙</a></li> <li><a href="/ditie/zd_lingkonglu.shtml">凌空路</a></li> <li><a href="/ditie/zd_yuandongdadao.shtml">远东大道</a></li> <li><a href="/ditie/zd_haitiansanlu.shtml">海天三路</a></li> <li><a href="/ditie/zd_pudongguojijichang.shtml">浦东国际机场</a></li>
+				
+				</ul>
+				<div style="clear:both"></div>
+				<p style="margin:10px 0 0 15px;font-size: 12px;color:#009393;">运营时间:(徐泾东 5:28-22:45 | 浦东国际机场 6:00-22:30）</p>
+				<div style="clear:both"></div>
+			</div>
+<!-- 线路结束-->
+
+
+
+<!-- 线路-->
+			<div class="line-list">
+				<div class="list-title"><a href="/ditie/xl_225.shtml">地铁3号线运营时间</a></div>
+				<ul class="station-li" style="list-style: none">
+				
+				  <li><a href="/ditie/zd_shanghainanzhan.shtml">上海南站</a></li> <li><a href="/ditie/zd_shilonglu.shtml">石龙路</a></li> <li><a href="/ditie/zd_longcaolu.shtml">龙漕路</a></li> <li><a href="/ditie/zd_caoeilu.shtml">漕溪路</a></li> <li><a href="/ditie/zd_yishanlu.shtml">宜山路</a></li> <li><a href="/ditie/zd_hongqiaolu.shtml">虹桥路</a></li> <li><a href="/ditie/zd_yananxilu.shtml">延安西路</a></li> <li><a href="/ditie/zd_zhongshangongyuan.shtml">中山公园</a></li> <li><a href="/ditie/zd_jinshajianglu.shtml">金沙江路</a></li> <li><a href="/ditie/zd_caoyanglu.shtml">曹杨路</a></li> <li><a href="/ditie/zd_zhenpinglu.shtml">镇坪路</a></li> <li><a href="/ditie/zd_zhongtanlu.shtml">中潭路</a></li> <li><a href="/ditie/zd_shanghaihuochezhan.shtml">上海火车站</a></li> <li><a href="/ditie/zd_baoshanlu.shtml">宝山路</a></li> <li><a href="/ditie/zd_dongbaoxinlu.shtml">东宝兴路</a></li> <li><a href="/ditie/zd_hongkouzouqiuchang.shtml">虹口足球场</a></li> <li><a href="/ditie/zd_chifenglu.shtml">赤峰路</a></li> <li><a href="/ditie/zd_dabaishu.shtml">大柏树</a></li> <li><a href="/ditie/zd_jiangwanzhen.shtml">江湾镇</a></li> <li><a href="/ditie/zd_yingaoxilu.shtml">殷高西路</a></li> <li><a href="/ditie/zd_changjiangnanlu.shtml">长江南路</a></li> <li><a href="/ditie/zd_songfalu.shtml">淞发路</a></li> <li><a href="/ditie/zd_zhanghuabang.shtml">张华浜</a></li> <li><a href="/ditie/zd_songbinlu.shtml">淞滨路</a></li> <li><a href="/ditie/zd_shuichanlu.shtml">水产路</a></li> <li><a href="/ditie/zd_baoyanglu.shtml">宝杨路</a></li> <li><a href="/ditie/zd_youyilu.shtml">友谊路</a></li> <li><a href="/ditie/zd_tielilu.shtml">铁力路</a></li> <li><a href="/ditie/zd_jiangyangbeilu.shtml">江杨北路</a></li>
+				
+				</ul>
+				<div style="clear:both"></div>
+				<p style="margin:10px 0 0 15px;font-size: 12px;color:#009393;">运营时间:(上海南站 5:20-22:35 | 江杨北路 5:20-22:40）</p>
+				<div style="clear:both"></div>
+			</div>
+<!-- 线路结束-->
+
+
+
+<!-- 线路-->
+			<div class="line-list">
+				<div class="list-title"><a href="/ditie/xl_226.shtml">地铁4号线运营时间</a></div>
+				<ul class="station-li" style="list-style: none">
+				
+				  <li><a href="/ditie/zd_yishanlu.shtml">宜山路</a></li> <li><a href="/ditie/zd_hongqiaolu.shtml">虹桥路</a></li> <li><a href="/ditie/zd_yananxilu.shtml">延安西路</a></li> <li><a href="/ditie/zd_zhongshangongyuan.shtml">中山公园</a></li> <li><a href="/ditie/zd_jinshajianglu.shtml">金沙江路</a></li> <li><a href="/ditie/zd_caoyanglu.shtml">曹杨路</a></li> <li><a href="/ditie/zd_zhenpinglu.shtml">镇坪路</a></li> <li><a href="/ditie/zd_zhongtanlu.shtml">中潭路</a></li> <li><a href="/ditie/zd_shanghaihuochezhan.shtml">上海火车站</a></li> <li><a href="/ditie/zd_baoshanlu.shtml">宝山路</a></li> <li><a href="/ditie/zd_hailunlu.shtml">海伦路</a></li> <li><a href="/ditie/zd_linpinglu.shtml">临平路</a></li> <li><a href="/ditie/zd_dalianlu.shtml">大连路</a></li> <li><a href="/ditie/zd_yangshupulu.shtml">杨树浦路</a></li> <li><a href="/ditie/zd_pudongdadao.shtml">浦东大道</a></li> <li><a href="/ditie/zd_shijidadao.shtml">世纪大道</a></li> <li><a href="/ditie/zd_pudianlu.shtml">浦电路</a></li> <li><a href="/ditie/zd_lancunlu.shtml">蓝村路</a></li> <li><a href="/ditie/zd_tangqiao.shtml">塘桥</a></li> <li><a href="/ditie/zd_nanpudaqiao.shtml">南浦大桥</a></li> <li><a href="/ditie/zd_xicangnanlu.shtml">西藏南路</a></li> <li><a href="/ditie/zd_lubanlu.shtml">鲁班路</a></li> <li><a href="/ditie/zd_damuqiaolu.shtml">大木桥路</a></li> <li><a href="/ditie/zd_donganlu.shtml">东安路</a></li> <li><a href="/ditie/zd_shanghaitiyuchang.shtml">上海体育场</a></li> <li><a href="/ditie/zd_shanghaitiyuguan.shtml">上海体育馆</a></li>
+				
+				</ul>
+				<div style="clear:both"></div>
+				<p style="margin:10px 0 0 15px;font-size: 12px;color:#009393;">运营时间:(宜山路 5:30-22:30 | 上海体育馆 6:27-23:27）</p>
+				<div style="clear:both"></div>
+			</div>
+<!-- 线路结束-->
+
+
+
+<!-- 线路-->
+			<div class="line-list">
+				<div class="list-title"><a href="/ditie/xl_227.shtml">地铁5号线运营时间</a></div>
+				<ul class="station-li" style="list-style: none">
+				
+				  <li><a href="/ditie/zd_xinzhuang.shtml">莘庄</a></li> <li><a href="/ditie/zd_chunshenlu.shtml">春申路</a></li> <li><a href="/ditie/zd_yindoulu.shtml">银都路</a></li> <li><a href="/ditie/zd_zhuanqiao.shtml">颛桥</a></li> <li><a href="/ditie/zd_beiqiao.shtml">北桥</a></li> <li><a href="/ditie/zd_jianchuanlu.shtml">剑川路</a></li> <li><a href="/ditie/zd_dongchuanlu.shtml">东川路</a></li> <li><a href="/ditie/zd_jiangchuanlu.shtml">江川路</a></li> <li><a href="/ditie/zd_xidu.shtml">西渡</a></li> <li><a href="/ditie/zd_xiaotang.shtml">萧塘</a></li> <li><a href="/ditie/zd_fengpudadao.shtml">奉浦大道</a></li> <li><a href="/ditie/zd_huanchengdonglu.shtml">环城东路</a></li> <li><a href="/ditie/zd_wangyuanlu.shtml">望园路</a></li> <li><a href="/ditie/zd_jinhaihu.shtml">金海湖</a></li> <li><a href="/ditie/zd_fengxianxincheng.shtml">奉贤新城</a></li>
+				
+				</ul>
+				<div style="clear:both"></div>
+				<p style="margin:10px 0 0 15px;font-size: 12px;color:#009393;">运营时间:(莘庄 5:50-22:40 | 奉贤新城 5:42-22:00）</p>
+				<div style="clear:both"></div>
+			</div>
+<!-- 线路结束-->
+
+
+
+<!-- 线路-->
+			<div class="line-list">
+				<div class="list-title"><a href="/ditie/xl_587.shtml">5号线支线运营时间</a></div>
+				<ul class="station-li" style="list-style: none">
+				
+				  <li><a href="/ditie/zd_xinzhuang.shtml">莘庄</a></li> <li><a href="/ditie/zd_chunshenlu.shtml">春申路</a></li> <li><a href="/ditie/zd_yindoulu.shtml">银都路</a></li> <li><a href="/ditie/zd_zhuanqiao.shtml">颛桥</a></li> <li><a href="/ditie/zd_beiqiao.shtml">北桥</a></li> <li><a href="/ditie/zd_jianchuanlu.shtml">剑川路</a></li> <li><a href="/ditie/zd_dongchuanlu.shtml">东川路</a></li> <li><a href="/ditie/zd_jinpinglu.shtml">金平路</a></li> <li><a href="/ditie/zd_huaninglu.shtml">华宁路</a></li> <li><a href="/ditie/zd_wenjinglu.shtml">文井路</a></li> <li><a href="/ditie/zd_lemxingkaifaqiu.shtml">闵行开发区</a></li>
+				
+				</ul>
+				<div style="clear:both"></div>
+				<p style="margin:10px 0 0 15px;font-size: 12px;color:#009393;">运营时间:(莘庄 6:00-22:40 | 闵行开发区 5:50-22:00）</p>
+				<div style="clear:both"></div>
+			</div>
+<!-- 线路结束-->
+
+
+
+<!-- 线路-->
+			<div class="line-list">
+				<div class="list-title"><a href="/ditie/xl_228.shtml">地铁6号线运营时间</a></div>
+				<ul class="station-li" style="list-style: none">
+				
+				  <li><a href="/ditie/zd_gangchenglu.shtml">港城路</a></li> <li><a href="/ditie/zd_waigaoqiaobaoshuiqiubei.shtml">外高桥保税区北</a></li> <li><a href="/ditie/zd_hangjinlu.shtml">航津路</a></li> <li><a href="/ditie/zd_waigaoqiaobaoshuiqiunan.shtml">外高桥保税区南</a></li> <li><a href="/ditie/zd_zhouhailu.shtml">洲海路</a></li> <li><a href="/ditie/zd_wuzhoudadao.shtml">五洲大道</a></li> <li><a href="/ditie/zd_dongjinglu.shtml">东靖路</a></li> <li><a href="/ditie/zd_jufenglu.shtml">巨峰路</a></li> <li><a href="/ditie/zd_wulianlu.shtml">五莲路</a></li> <li><a href="/ditie/zd_boxinlu.shtml">博兴路</a></li> <li><a href="/ditie/zd_jinqiaolu.shtml">金桥路</a></li> <li><a href="/ditie/zd_yunshanlu.shtml">云山路</a></li> <li><a href="/ditie/zd_depinglu.shtml">德平路</a></li> <li><a href="/ditie/zd_beiyangjinglu.shtml">北洋泾路</a></li> <li><a href="/ditie/zd_minshenglu.shtml">民生路</a></li> <li><a href="/ditie/zd_yuanshentiyuzhongxin.shtml">源深体育中心</a></li> <li><a href="/ditie/zd_shijidadao.shtml">世纪大道</a></li> <li><a href="/ditie/zd_pudianlu.shtml">浦电路</a></li> <li><a href="/ditie/zd_lancunlu.shtml">蓝村路</a></li> <li><a href="/ditie/zd_shanghaiertongyixuezhongxin.shtml">上海儿童医学中心</a></li> <li><a href="/ditie/zd_linyixincun.shtml">临沂新村</a></li> <li><a href="/ditie/zd_gaokexilu.shtml">高科西路</a></li> <li><a href="/ditie/zd_dongminglu.shtml">东明路</a></li> <li><a href="/ditie/zd_gaokemlu.shtml">高青路</a></li> <li><a href="/ditie/zd_huaxiaxilu.shtml">华夏西路</a></li> <li><a href="/ditie/zd_shangnanlu.shtml">上南路</a></li> <li><a href="/ditie/zd_lingyannanlu.shtml">灵岩南路</a></li> <li><a href="/ditie/zd_dongfangtiyuzhongxin.shtml">东方体育中心</a></li>
+				
+				</ul>
+				<div style="clear:both"></div>
+				<p style="margin:10px 0 0 15px;font-size: 12px;color:#009393;">运营时间:(港城路 5:30-22:30 | 东方体育中心 5:30-22:30）</p>
+				<div style="clear:both"></div>
+			</div>
+<!-- 线路结束-->
+
+
+
+<!-- 线路-->
+			<div class="line-list">
+				<div class="list-title"><a href="/ditie/xl_229.shtml">地铁7号线运营时间</a></div>
+				<ul class="station-li" style="list-style: none">
+				
+				  <li><a href="/ditie/zd_huamulu.shtml">花木路</a></li> <li><a href="/ditie/zd_longyanglu.shtml">龙阳路</a></li> <li><a href="/ditie/zd_fanghualu.shtml">芳华路</a></li> <li><a href="/ditie/zd_jinxiulu.shtml">锦绣路</a></li> <li><a href="/ditie/zd_yanggaonanlu.shtml">杨高南路</a></li> <li><a href="/ditie/zd_gaokexilu.shtml">高科西路</a></li> <li><a href="/ditie/zd_yuntailu.shtml">云台路</a></li> <li><a href="/ditie/zd_yaohualu.shtml">耀华路</a></li> <li><a href="/ditie/zd_changqinglu.shtml">长清路</a></li> <li><a href="/ditie/zd_houtan.shtml">后滩</a></li> <li><a href="/ditie/zd_longhuazhonglu.shtml">龙华中路</a></li> <li><a href="/ditie/zd_donganlu.shtml">东安路</a></li> <li><a href="/ditie/zd_zhaojiabanglu.shtml">肇嘉浜路</a></li> <li><a href="/ditie/zd_changshulu.shtml">常熟路</a></li> <li><a href="/ditie/zd_jingansi.shtml">静安寺</a></li> <li><a href="/ditie/zd_changpinglu.shtml">昌平路</a></li> <li><a href="/ditie/zd_changshoulu.shtml">长寿路</a></li> <li><a href="/ditie/zd_zhenpinglu.shtml">镇坪路</a></li> <li><a href="/ditie/zd_langaolu.shtml">岚皋路</a></li> <li><a href="/ditie/zd_xincunlu.shtml">新村路</a></li> <li><a href="/ditie/zd_dahuasanlu.shtml">大华三路</a></li> <li><a href="/ditie/zd_xingzhilu.shtml">行知路</a></li> <li><a href="/ditie/zd_dachangzhen.shtml">大场镇</a></li> <li><a href="/ditie/zd_changzhonglu.shtml">场中路</a></li> <li><a href="/ditie/zd_shangdalu.shtml">上大路</a></li> <li><a href="/ditie/zd_nanchenlu.shtml">南陈路</a></li> <li><a href="/ditie/zd_shanghaidaxue.shtml">上海大学</a></li> <li><a href="/ditie/zd_qihualu.shtml">祁华路</a></li> <li><a href="/ditie/zd_gucungongyuan.shtml">顾村公园</a></li> <li><a href="/ditie/zd_liuxing.shtml">刘行</a></li> <li><a href="/ditie/zd_panguanglu.shtml">潘广路</a></li> <li><a href="/ditie/zd_luonanxincun.shtml">罗南新村</a></li> <li><a href="/ditie/zd_meilanhu.shtml">美兰湖</a></li>
+				
+				</ul>
+				<div style="clear:both"></div>
+				<p style="margin:10px 0 0 15px;font-size: 12px;color:#009393;">运营时间:(花木路 5:30-22:30 | 美兰湖 5:30-22:15）</p>
+				<div style="clear:both"></div>
+			</div>
+<!-- 线路结束-->
+
+
+
+<!-- 线路-->
+			<div class="line-list">
+				<div class="list-title"><a href="/ditie/xl_230.shtml">地铁8号线运营时间</a></div>
+				<ul class="station-li" style="list-style: none">
+				
+				  <li><a href="/ditie/zd_shendugonglu.shtml">沈杜公路</a></li> <li><a href="/ditie/zd_lianhanglu.shtml">联航路</a></li> <li><a href="/ditie/zd_jiangyuelu.shtml">江月路</a></li> <li><a href="/ditie/zd_pujiangzhen.shtml">浦江镇</a></li> <li><a href="/ditie/zd_luhenglu.shtml">芦恒路</a></li> <li><a href="/ditie/zd_lingzhaoxincun.shtml">凌兆新村</a></li> <li><a href="/ditie/zd_dongfangtiyuzhongxin.shtml">东方体育中心</a></li> <li><a href="/ditie/zd_yangsi.shtml">杨思</a></li> <li><a href="/ditie/zd_chengshanlu.shtml">成山路</a></li> <li><a href="/ditie/zd_yaohualu.shtml">耀华路</a></li> <li><a href="/ditie/zd_zhonghuayishugong.shtml">中华艺术宫</a></li> <li><a href="/ditie/zd_xicangnanlu.shtml">西藏南路</a></li> <li><a href="/ditie/zd_lujiabanglu.shtml">陆家浜路</a></li> <li><a href="/ditie/zd_laoximen.shtml">老西门</a></li> <li><a href="/ditie/zd_dashijie.shtml">大世界</a></li> <li><a href="/ditie/zd_renminguangchang.shtml">人民广场</a></li> <li><a href="/ditie/zd_qufulu.shtml">曲阜路</a></li> <li><a href="/ditie/zd_zhongxinlu.shtml">中兴路</a></li> <li><a href="/ditie/zd_xicangbeilu.shtml">西藏北路</a></li> <li><a href="/ditie/zd_hongkouzouqiuchang.shtml">虹口足球场</a></li> <li><a href="/ditie/zd_quyanglu.shtml">曲阳路</a></li> <li><a href="/ditie/zd_sipinglu.shtml">四平路</a></li> <li><a href="/ditie/zd_anshanxincun.shtml">鞍山新村</a></li> <li><a href="/ditie/zd_jiangpulu.shtml">江浦路</a></li> <li><a href="/ditie/zd_huangxinlu.shtml">黄兴路</a></li> <li><a href="/ditie/zd_yanjizhonglu.shtml">延吉中路</a></li> <li><a href="/ditie/zd_huangxingongyuan.shtml">黄兴公园</a></li> <li><a href="/ditie/zd_xiangyinlu.shtml">翔殷路</a></li> <li><a href="/ditie/zd_nenjianglu.shtml">嫩江路</a></li> <li><a href="/ditie/zd_shiguanglu.shtml">市光路</a></li>
+				
+				</ul>
+				<div style="clear:both"></div>
+				<p style="margin:10px 0 0 15px;font-size: 12px;color:#009393;">运营时间:(沈杜公路 5:30-22:30 | 市光路 5:30-22:30）</p>
+				<div style="clear:both"></div>
+			</div>
+<!-- 线路结束-->
+
+
+
+<!-- 线路-->
+			<div class="line-list">
+				<div class="list-title"><a href="/ditie/xl_231.shtml">地铁9号线运营时间</a></div>
+				<ul class="station-li" style="list-style: none">
+				
+				  <li><a href="/ditie/zd_caolu.shtml">曹路</a></li> <li><a href="/ditie/zd_minleilu.shtml">民雷路</a></li> <li><a href="/ditie/zd_gutanglu.shtml">顾唐路</a></li> <li><a href="/ditie/zd_jinhailu.shtml">金海路</a></li> <li><a href="/ditie/zd_jinjilu.shtml">金吉路</a></li> <li><a href="/ditie/zd_jinqiao.shtml">金桥</a></li> <li><a href="/ditie/zd_taierzhuanglu.shtml">台儿庄路</a></li> <li><a href="/ditie/zd_lantianlu.shtml">蓝天路</a></li> <li><a href="/ditie/zd_fangdianlu.shtml">芳甸路</a></li> <li><a href="/ditie/zd_yanggaozhonglu.shtml">杨高中路</a></li> <li><a href="/ditie/zd_shijidadao.shtml">世纪大道</a></li> <li><a href="/ditie/zd_shangchenglu.shtml">商城路</a></li> <li><a href="/ditie/zd_xiaonanmen.shtml">小南门</a></li> <li><a href="/ditie/zd_lujiabanglu.shtml">陆家浜路</a></li> <li><a href="/ditie/zd_madanglu.shtml">马当路</a></li> <li><a href="/ditie/zd_dapuqiao.shtml">打浦桥</a></li> <li><a href="/ditie/zd_jiashanlu.shtml">嘉善路</a></li> <li><a href="/ditie/zd_zhaojiabanglu.shtml">肇嘉浜路</a></li> <li><a href="/ditie/zd_xujiahui.shtml">徐家汇</a></li> <li><a href="/ditie/zd_yishanlu.shtml">宜山路</a></li> <li><a href="/ditie/zd_guilinlu.shtml">桂林路</a></li> <li><a href="/ditie/zd_caohejingkaifaqiu.shtml">漕河泾开发区</a></li> <li><a href="/ditie/zd_hechuanlu.shtml">合川路</a></li> <li><a href="/ditie/zd_xingzhonglu.shtml">星中路</a></li> <li><a href="/ditie/zd_qibao.shtml">七宝</a></li> <li><a href="/ditie/zd_zhongchunlu.shtml">中春路</a></li> <li><a href="/ditie/zd_jiuting.shtml">九亭</a></li> <li><a href="/ditie/zd_sijing.shtml">泗泾</a></li> <li><a href="/ditie/zd_sheshan.shtml">佘山</a></li> <li><a href="/ditie/zd_dongjing.shtml">洞泾</a></li> <li><a href="/ditie/zd_songjiangdaxuecheng.shtml">松江大学城</a></li> <li><a href="/ditie/zd_songjiangxincheng.shtml">松江新城</a></li> <li><a href="/ditie/zd_songjiangtiyuzhongxin.shtml">松江体育中心</a></li> <li><a href="/ditie/zd_zuibaichi.shtml">醉白池</a></li> <li><a href="/ditie/zd_songjiangnanzhan.shtml">松江南站</a></li>
+				
+				</ul>
+				<div style="clear:both"></div>
+				<p style="margin:10px 0 0 15px;font-size: 12px;color:#009393;">运营时间:(曹路 5：30-22:30 | 松江南站 5:40-）</p>
+				<div style="clear:both"></div>
+			</div>
+<!-- 线路结束-->
+
+
+
+<!-- 线路-->
+			<div class="line-list">
+				<div class="list-title"><a href="/ditie/xl_232.shtml">地铁10号线运营时间</a></div>
+				<ul class="station-li" style="list-style: none">
+				
+				  <li><a href="/ditie/zd_jilonglu.shtml">基隆路</a></li> <li><a href="/ditie/zd_gangchenglu.shtml">港城路</a></li> <li><a href="/ditie/zd_gaoqiao.shtml">高桥</a></li> <li><a href="/ditie/zd_gaoqiaoxi.shtml">高桥西</a></li> <li><a href="/ditie/zd_shuangjianglu.shtml">双江路</a></li> <li><a href="/ditie/zd_guofanlu.shtml">国帆路</a></li> <li><a href="/ditie/zd_xinjiangwancheng.shtml">新江湾城</a></li> <li><a href="/ditie/zd_yingaodonglu.shtml">殷高东路</a></li> <li><a href="/ditie/zd_sanmenlu.shtml">三门路</a></li> <li><a href="/ditie/zd_jiangwantiyuchang.shtml">江湾体育场</a></li> <li><a href="/ditie/zd_wujiaochang.shtml">五角场</a></li> <li><a href="/ditie/zd_guoquanlu.shtml">国权路</a></li> <li><a href="/ditie/zd_tongjidaxue.shtml">同济大学</a></li> <li><a href="/ditie/zd_sipinglu.shtml">四平路</a></li> <li><a href="/ditie/zd_youdianxincun.shtml">邮电新村</a></li> <li><a href="/ditie/zd_hailunlu.shtml">海伦路</a></li> <li><a href="/ditie/zd_sichuanbeilu.shtml">四川北路</a></li> <li><a href="/ditie/zd_tiantonglu.shtml">天潼路</a></li> <li><a href="/ditie/zd_nanjingdonglu.shtml">南京东路</a></li> <li><a href="/ditie/zd_yuyuan.shtml">豫园</a></li> <li><a href="/ditie/zd_laoximen.shtml">老西门</a></li> <li><a href="/ditie/zd_xintiandi.shtml">新天地</a></li> <li><a href="/ditie/zd_shanxinanlu.shtml">陕西南路</a></li> <li><a href="/ditie/zd_shanghaitushuguan.shtml">上海图书馆</a></li> <li><a href="/ditie/zd_jiaotongdaxue.shtml">交通大学</a></li> <li><a href="/ditie/zd_hongqiaolu.shtml">虹桥路</a></li> <li><a href="/ditie/zd_songyuanlu.shtml">宋园路</a></li> <li><a href="/ditie/zd_yililu.shtml">伊犁路</a></li> <li><a href="/ditie/zd_shuichenglu.shtml">水城路</a></li> <li><a href="/ditie/zd_longeilu.shtml">龙溪路</a></li> <li><a href="/ditie/zd_shanghaidongwuyuan.shtml">上海动物园</a></li> <li><a href="/ditie/zd_hongqiao1haohangzhanlou.shtml">虹桥1号航站楼</a></li> <li><a href="/ditie/zd_hongqiao2haohangzhanlou.shtml">虹桥2号航站楼</a></li> <li><a href="/ditie/zd_hongqiaohuochezhan.shtml">虹桥火车站</a></li>
+				
+				</ul>
+				<div style="clear:both"></div>
+				<p style="margin:10px 0 0 15px;font-size: 12px;color:#009393;">运营时间:(基隆路 5:25-22:30 | 虹桥火车站 23:41-22:30）</p>
+				<div style="clear:both"></div>
+			</div>
+<!-- 线路结束-->
+
+
+
+<!-- 线路-->
+			<div class="line-list">
+				<div class="list-title"><a href="/ditie/xl_237.shtml">地铁10号线支线运营时间</a></div>
+				<ul class="station-li" style="list-style: none">
+				
+				  <li><a href="/ditie/zd_jilonglu.shtml">基隆路</a></li> <li><a href="/ditie/zd_gangchenglu.shtml">港城路</a></li> <li><a href="/ditie/zd_gaoqiao.shtml">高桥</a></li> <li><a href="/ditie/zd_gaoqiaoxi.shtml">高桥西</a></li> <li><a href="/ditie/zd_shuangjianglu.shtml">双江路</a></li> <li><a href="/ditie/zd_guofanlu.shtml">国帆路</a></li> <li><a href="/ditie/zd_xinjiangwancheng.shtml">新江湾城</a></li> <li><a href="/ditie/zd_yingaodonglu.shtml">殷高东路</a></li> <li><a href="/ditie/zd_sanmenlu.shtml">三门路</a></li> <li><a href="/ditie/zd_jiangwantiyuchang.shtml">江湾体育场</a></li> <li><a href="/ditie/zd_wujiaochang.shtml">五角场</a></li> <li><a href="/ditie/zd_guoquanlu.shtml">国权路</a></li> <li><a href="/ditie/zd_tongjidaxue.shtml">同济大学</a></li> <li><a href="/ditie/zd_sipinglu.shtml">四平路</a></li> <li><a href="/ditie/zd_youdianxincun.shtml">邮电新村</a></li> <li><a href="/ditie/zd_hailunlu.shtml">海伦路</a></li> <li><a href="/ditie/zd_sichuanbeilu.shtml">四川北路</a></li> <li><a href="/ditie/zd_tiantonglu.shtml">天潼路</a></li> <li><a href="/ditie/zd_nanjingdonglu.shtml">南京东路</a></li> <li><a href="/ditie/zd_yuyuan.shtml">豫园</a></li> <li><a href="/ditie/zd_laoximen.shtml">老西门</a></li> <li><a href="/ditie/zd_xintiandi.shtml">新天地</a></li> <li><a href="/ditie/zd_shanxinanlu.shtml">陕西南路</a></li> <li><a href="/ditie/zd_shanghaitushuguan.shtml">上海图书馆</a></li> <li><a href="/ditie/zd_jiaotongdaxue.shtml">交通大学</a></li> <li><a href="/ditie/zd_hongqiaolu.shtml">虹桥路</a></li> <li><a href="/ditie/zd_songyuanlu.shtml">宋园路</a></li> <li><a href="/ditie/zd_yililu.shtml">伊犁路</a></li> <li><a href="/ditie/zd_shuichenglu.shtml">水城路</a></li> <li><a href="/ditie/zd_longeilu.shtml">龙溪路</a></li> <li><a href="/ditie/zd_longbaixincun.shtml">龙柏新村</a></li> <li><a href="/ditie/zd_zitenglu.shtml">紫藤路</a></li> <li><a href="/ditie/zd_hangzhonglu.shtml">航中路</a></li>
+				
+				</ul>
+				<div style="clear:both"></div>
+				<p style="margin:10px 0 0 15px;font-size: 12px;color:#009393;">运营时间:(基隆路 05:30-22:25 | 航中路 5:30-22:25）</p>
+				<div style="clear:both"></div>
+			</div>
+<!-- 线路结束-->
+
+
+
+<!-- 线路-->
+			<div class="line-list">
+				<div class="list-title"><a href="/ditie/xl_233.shtml">地铁11号线运营时间</a></div>
+				<ul class="station-li" style="list-style: none">
+				
+				  <li><a href="/ditie/zd_dishini.shtml">迪士尼</a></li> <li><a href="/ditie/zd_kangxingonglu.shtml">康新公路</a></li> <li><a href="/ditie/zd_xiuyanlu.shtml">秀沿路</a></li> <li><a href="/ditie/zd_luoshanlu.shtml">罗山路</a></li> <li><a href="/ditie/zd_yuqiao.shtml">御桥</a></li> <li><a href="/ditie/zd_pusanlu.shtml">浦三路</a></li> <li><a href="/ditie/zd_sanlindong.shtml">三林东</a></li> <li><a href="/ditie/zd_sanlin.shtml">三林</a></li> <li><a href="/ditie/zd_dongfangtiyuzhongxin.shtml">东方体育中心</a></li> <li><a href="/ditie/zd_longyaolu.shtml">龙耀路</a></li> <li><a href="/ditie/zd_yunjinlu.shtml">云锦路</a></li> <li><a href="/ditie/zd_longhua.shtml">龙华</a></li> <li><a href="/ditie/zd_shanghaiyouyongguan.shtml">上海游泳馆</a></li> <li><a href="/ditie/zd_xujiahui.shtml">徐家汇</a></li> <li><a href="/ditie/zd_jiaotongdaxue.shtml">交通大学</a></li> <li><a href="/ditie/zd_jiangsulu.shtml">江苏路</a></li> <li><a href="/ditie/zd_longdelu.shtml">隆德路</a></li> <li><a href="/ditie/zd_caoyanglu.shtml">曹杨路</a></li> <li><a href="/ditie/zd_fengqiaolu.shtml">枫桥路</a></li> <li><a href="/ditie/zd_zhenru.shtml">真如</a></li> <li><a href="/ditie/zd_shanghaixizhan.shtml">上海西站</a></li> <li><a href="/ditie/zd_liziyuan.shtml">李子园</a></li> <li><a href="/ditie/zd_qilianshanlu.shtml">祁连山路</a></li> <li><a href="/ditie/zd_wuweilu.shtml">武威路</a></li> <li><a href="/ditie/zd_taopuxincun.shtml">桃浦新村</a></li> <li><a href="/ditie/zd_nanxiang.shtml">南翔</a></li> <li><a href="/ditie/zd_chenxianggonglu.shtml">陈翔公路</a></li> <li><a href="/ditie/zd_malu.shtml">马陆</a></li> <li><a href="/ditie/zd_jiadingxincheng.shtml">嘉定新城</a></li> <li><a href="/ditie/zd_baiyinlu.shtml">白银路</a></li> <li><a href="/ditie/zd_jiadingxi.shtml">嘉定西</a></li> <li><a href="/ditie/zd_jiadingbei.shtml">嘉定北</a></li>
+				
+				</ul>
+				<div style="clear:both"></div>
+				<p style="margin:10px 0 0 15px;font-size: 12px;color:#009393;">运营时间:(迪士尼 5:58-22:30 | 嘉定北 5:36-22:10）</p>
+				<div style="clear:both"></div>
+			</div>
+<!-- 线路结束-->
+
+
+
+<!-- 线路-->
+			<div class="line-list">
+				<div class="list-title"><a href="/ditie/xl_238.shtml">地铁11号线支线运营时间</a></div>
+				<ul class="station-li" style="list-style: none">
+				
+				  <li><a href="/ditie/zd_dishini.shtml">迪士尼</a></li> <li><a href="/ditie/zd_kangxingonglu.shtml">康新公路</a></li> <li><a href="/ditie/zd_xiuyanlu.shtml">秀沿路</a></li> <li><a href="/ditie/zd_luoshanlu.shtml">罗山路</a></li> <li><a href="/ditie/zd_yuqiao.shtml">御桥</a></li> <li><a href="/ditie/zd_pusanlu.shtml">浦三路</a></li> <li><a href="/ditie/zd_sanlindong.shtml">三林东</a></li> <li><a href="/ditie/zd_sanlin.shtml">三林</a></li> <li><a href="/ditie/zd_dongfangtiyuzhongxin.shtml">东方体育中心</a></li> <li><a href="/ditie/zd_longyaolu.shtml">龙耀路</a></li> <li><a href="/ditie/zd_yunjinlu.shtml">云锦路</a></li> <li><a href="/ditie/zd_longhua.shtml">龙华</a></li> <li><a href="/ditie/zd_shanghaiyouyongguan.shtml">上海游泳馆</a></li> <li><a href="/ditie/zd_xujiahui.shtml">徐家汇</a></li> <li><a href="/ditie/zd_jiaotongdaxue.shtml">交通大学</a></li> <li><a href="/ditie/zd_jiangsulu.shtml">江苏路</a></li> <li><a href="/ditie/zd_longdelu.shtml">隆德路</a></li> <li><a href="/ditie/zd_caoyanglu.shtml">曹杨路</a></li> <li><a href="/ditie/zd_fengqiaolu.shtml">枫桥路</a></li> <li><a href="/ditie/zd_zhenru.shtml">真如</a></li> <li><a href="/ditie/zd_shanghaixizhan.shtml">上海西站</a></li> <li><a href="/ditie/zd_liziyuan.shtml">李子园</a></li> <li><a href="/ditie/zd_qilianshanlu.shtml">祁连山路</a></li> <li><a href="/ditie/zd_wuweilu.shtml">武威路</a></li> <li><a href="/ditie/zd_malu.shtml">马陆</a></li> <li><a href="/ditie/zd_taopuxincun.shtml">桃浦新村</a></li> <li><a href="/ditie/zd_chenxianggonglu.shtml">陈翔公路</a></li> <li><a href="/ditie/zd_nanxiang.shtml">南翔</a></li> <li><a href="/ditie/zd_jiadingxincheng.shtml">嘉定新城</a></li> <li><a href="/ditie/zd_shanghaisaichechang.shtml">上海赛车场</a></li> <li><a href="/ditie/zd_changjidonglu.shtml">昌吉东路</a></li> <li><a href="/ditie/zd_shanghaiqichecheng.shtml">上海汽车城</a></li> <li><a href="/ditie/zd_anting.shtml">安亭</a></li> <li><a href="/ditie/zd_zhaofenglu.shtml">兆丰路</a></li> <li><a href="/ditie/zd_guangminglu.shtml">光明路</a></li> <li><a href="/ditie/zd_huaqiao.shtml">花桥</a></li>
+				
+				</ul>
+				<div style="clear:both"></div>
+				<p style="margin:10px 0 0 15px;font-size: 12px;color:#009393;">运营时间:(迪士尼 5:58-22:00 | 花桥 5:37-21:51）</p>
+				<div style="clear:both"></div>
+			</div>
+<!-- 线路结束-->
+
+
+
+<!-- 线路-->
+			<div class="line-list">
+				<div class="list-title"><a href="/ditie/xl_234.shtml">地铁12号线运营时间</a></div>
+				<ul class="station-li" style="list-style: none">
+				
+				  <li><a href="/ditie/zd_jinhailu.shtml">金海路</a></li> <li><a href="/ditie/zd_shenjianglu.shtml">申江路</a></li> <li><a href="/ditie/zd_jinjinglu.shtml">金京路</a></li> <li><a href="/ditie/zd_yanggaobeilu.shtml">杨高北路</a></li> <li><a href="/ditie/zd_jufenglu.shtml">巨峰路</a></li> <li><a href="/ditie/zd_donglulu.shtml">东陆路</a></li> <li><a href="/ditie/zd_fuxindao.shtml">复兴岛</a></li> <li><a href="/ditie/zd_aiguolu.shtml">爱国路</a></li> <li><a href="/ditie/zd_longchanglu.shtml">隆昌路</a></li> <li><a href="/ditie/zd_ningguolu.shtml">宁国路</a></li> <li><a href="/ditie/zd_jiangpugongyuan.shtml">江浦公园</a></li> <li><a href="/ditie/zd_dalianlu.shtml">大连路</a></li> <li><a href="/ditie/zd_tilanqiao.shtml">提篮桥</a></li> <li><a href="/ditie/zd_guojikeyunzhongxin.shtml">国际客运中心</a></li> <li><a href="/ditie/zd_tiantonglu.shtml">天潼路</a></li> <li><a href="/ditie/zd_qufulu.shtml">曲阜路</a></li> <li><a href="/ditie/zd_hanzhonglu.shtml">汉中路</a></li> <li><a href="/ditie/zd_nanjingxilu.shtml">南京西路</a></li> <li><a href="/ditie/zd_shanxinanlu.shtml">陕西南路</a></li> <li><a href="/ditie/zd_jiashanlu.shtml">嘉善路</a></li> <li><a href="/ditie/zd_damuqiaolu.shtml">大木桥路</a></li> <li><a href="/ditie/zd_longhuazhonglu.shtml">龙华中路</a></li> <li><a href="/ditie/zd_longhua.shtml">龙华</a></li> <li><a href="/ditie/zd_longcaolu.shtml">龙漕路</a></li> <li><a href="/ditie/zd_caobaolu.shtml">漕宝路</a></li> <li><a href="/ditie/zd_guilingongyuan.shtml">桂林公园</a></li> <li><a href="/ditie/zd_hongcaolu.shtml">虹漕路</a></li> <li><a href="/ditie/zd_hongmeilu.shtml">虹梅路</a></li> <li><a href="/ditie/zd_donglanlu.shtml">东兰路</a></li> <li><a href="/ditie/zd_gudailu.shtml">顾戴路</a></li> <li><a href="/ditie/zd_hongxinlu.shtml">虹莘路</a></li> <li><a href="/ditie/zd_qixinlu.shtml">七莘路</a></li>
+				
+				</ul>
+				<div style="clear:both"></div>
+				<p style="margin:10px 0 0 15px;font-size: 12px;color:#009393;">运营时间:(金海路 5:30-22:30 | 七莘路 05:30-22:30）</p>
+				<div style="clear:both"></div>
+			</div>
+<!-- 线路结束-->
+
+
+
+<!-- 线路-->
+			<div class="line-list">
+				<div class="list-title"><a href="/ditie/xl_235.shtml">地铁13号线运营时间</a></div>
+				<ul class="station-li" style="list-style: none">
+				
+				  <li><a href="/ditie/zd_jinyunlu.shtml">金运路</a></li> <li><a href="/ditie/zd_jinshajiangxilu.shtml">金沙江西路</a></li> <li><a href="/ditie/zd_fengzhuang.shtml">丰庄</a></li> <li><a href="/ditie/zd_qilianshannanlu.shtml">祁连山南路</a></li> <li><a href="/ditie/zd_zhenbeilu.shtml">真北路</a></li> <li><a href="/ditie/zd_daduhelu.shtml">大渡河路</a></li> <li><a href="/ditie/zd_jinshajianglu.shtml">金沙江路</a></li> <li><a href="/ditie/zd_longdelu.shtml">隆德路</a></li> <li><a href="/ditie/zd_wuninglu.shtml">武宁路</a></li> <li><a href="/ditie/zd_changshoulu.shtml">长寿路</a></li> <li><a href="/ditie/zd_jiangninglu.shtml">江宁路</a></li> <li><a href="/ditie/zd_hanzhonglu.shtml">汉中路</a></li> <li><a href="/ditie/zd_ziranbowuguan.shtml">自然博物馆</a></li> <li><a href="/ditie/zd_nanjingxilu.shtml">南京西路</a></li> <li><a href="/ditie/zd_huaihaizhonglu.shtml">淮海中路</a></li> <li><a href="/ditie/zd_xintiandi.shtml">新天地</a></li> <li><a href="/ditie/zd_madanglu.shtml">马当路</a></li> <li><a href="/ditie/zd_shibohuibowuguan.shtml">世博会博物馆</a></li> <li><a href="/ditie/zd_shibodadao.shtml">世博大道</a></li> <li><a href="/ditie/zd_changqinglu.shtml">长清路</a></li> <li><a href="/ditie/zd_chengshanlu.shtml">成山路</a></li> <li><a href="/ditie/zd_dongminglu.shtml">东明路</a></li> <li><a href="/ditie/zd_huapenglu.shtml">华鹏路</a></li> <li><a href="/ditie/zd_xiananlu.shtml">下南路</a></li> <li><a href="/ditie/zd_beicai.shtml">北蔡</a></li> <li><a href="/ditie/zd_chenchunlu.shtml">陈春路</a></li> <li><a href="/ditie/zd_lianeilu.shtml">莲溪路</a></li> <li><a href="/ditie/zd_huaxiazhonglu.shtml">华夏中路</a></li> <li><a href="/ditie/zd_zhongkelu.shtml">中科路</a></li> <li><a href="/ditie/zd_xuelinlu.shtml">学林路</a></li> <li><a href="/ditie/zd_zhangjianglu.shtml">张江路</a></li>
+				
+				</ul>
+				<div style="clear:both"></div>
+				<p style="margin:10px 0 0 15px;font-size: 12px;color:#009393;">运营时间:(金运路 5:30-22:30 | 张江路 5:30-22:30）</p>
+				<div style="clear:both"></div>
+			</div>
+<!-- 线路结束-->
+
+
+
+<!-- 线路-->
+			<div class="line-list">
+				<div class="list-title"><a href="/ditie/xl_239.shtml">地铁16号线运营时间</a></div>
+				<ul class="station-li" style="list-style: none">
+				
+				  <li><a href="/ditie/zd_longyanglu.shtml">龙阳路</a></li> <li><a href="/ditie/zd_huaxiazhonglu.shtml">华夏中路</a></li> <li><a href="/ditie/zd_luoshanlu.shtml">罗山路</a></li> <li><a href="/ditie/zd_zhoupudong.shtml">周浦东</a></li> <li><a href="/ditie/zd_heshahangcheng.shtml">鹤沙航城</a></li> <li><a href="/ditie/zd_hangtoudong.shtml">航头东</a></li> <li><a href="/ditie/zd_xinchang.shtml">新场</a></li> <li><a href="/ditie/zd_yeshengdongwuyuan.shtml">野生动物园</a></li> <li><a href="/ditie/zd_huinan.shtml">惠南</a></li> <li><a href="/ditie/zd_huinandong.shtml">惠南东</a></li> <li><a href="/ditie/zd_shuyuan.shtml">书院</a></li> <li><a href="/ditie/zd_lingangdadao.shtml">临港大道</a></li> <li><a href="/ditie/zd_dishuihu.shtml">滴水湖</a></li>
+				
+				</ul>
+				<div style="clear:both"></div>
+				<p style="margin:10px 0 0 15px;font-size: 12px;color:#009393;">运营时间:(龙阳路 5:50-22:00 | 滴水湖 6:00-22:00）</p>
+				<div style="clear:both"></div>
+			</div>
+<!-- 线路结束-->
+
+
+
+<!-- 线路-->
+			<div class="line-list">
+				<div class="list-title"><a href="/ditie/xl_236.shtml">地铁磁悬浮运营时间</a></div>
+				<ul class="station-li" style="list-style: none">
+				
+				  <li><a href="/ditie/zd_longyanglu.shtml">龙阳路</a></li> <li><a href="/ditie/zd_pudongguojijichang.shtml">浦东国际机场</a></li>
+				
+				</ul>
+				<div style="clear:both"></div>
+				<p style="margin:10px 0 0 15px;font-size: 12px;color:#009393;">运营时间:(龙阳路 6:45-21:40 | 浦东国际机场 7:02-21:42）</p>
+				<div style="clear:both"></div>
+			</div>
+<!-- 线路结束-->
+
+
+
+<!-- 线路-->
+			<div class="line-list">
+				<div class="list-title"><a href="/ditie/xl_241.shtml">地铁14号线运营时间</a></div>
+				<ul class="station-li" style="list-style: none">
+				
+				  <li><a href="/ditie/zd_fengbangzhan.shtml">封浜站</a></li> <li><a href="/ditie/zd_lexiulu.shtml">乐秀路</a></li> <li><a href="/ditie/zd_lintaolu.shtml">临洮路</a></li> <li><a href="/ditie/zd_jiayilu.shtml">嘉怡路</a></li> <li><a href="/ditie/zd_dingbianlu.shtml">定边路</a></li> <li><a href="/ditie/zd_zhenxinxincun.shtml">真新新村</a></li> <li><a href="/ditie/zd_zhenguanglu.shtml">真光路</a></li> <li><a href="/ditie/zd_tongchuanlu.shtml">铜川路</a></li> <li><a href="/ditie/zd_zhenru.shtml">真如</a></li> <li><a href="/ditie/zd_zhongninglu.shtml">中宁路</a></li> <li><a href="/ditie/zd_caoyanglu.shtml">曹杨路</a></li> <li><a href="/ditie/zd_wuninglu.shtml">武宁路</a></li> <li><a href="/ditie/zd_wudinglu.shtml">武定路</a></li> <li><a href="/ditie/zd_jingansi.shtml">静安寺</a></li> <li><a href="/ditie/zd_huangbeinanlu.shtml">一大会址·黄陂南路</a></li> <li><a href="/ditie/zd_dashijie.shtml">大世界</a></li> <li><a href="/ditie/zd_yuyuan.shtml">豫园</a></li> <li><a href="/ditie/zd_lujiazui.shtml">陆家嘴</a></li> <li><a href="/ditie/zd_pudongnanlu.shtml">浦东南路</a></li> <li><a href="/ditie/zd_pudongdadao.shtml">浦东大道</a></li> <li><a href="/ditie/zd_yuanshenlu.shtml">源深路</a></li> <li><a href="/ditie/zd_changyilu.shtml">昌邑路</a></li> <li><a href="/ditie/zd_xiepulu.shtml">歇浦路</a></li> <li><a href="/ditie/zd_yunshanlu.shtml">云山路</a></li> <li><a href="/ditie/zd_lantianlu.shtml">蓝天路</a></li> <li><a href="/ditie/zd_huangyanglu.shtml">黄杨路</a></li> <li><a href="/ditie/zd_yunshunlu.shtml">云顺路</a></li> <li><a href="/ditie/zd_pudongzuqiuchang.shtml">浦东足球场</a></li> <li><a href="/ditie/zd_jinyuelu.shtml">金粤路</a></li> <li><a href="/ditie/zd_guiqiaolu.shtml">桂桥路</a></li>
+				
+				</ul>
+				<div style="clear:both"></div>
+				<p style="margin:10px 0 0 15px;font-size: 12px;color:#009393;">运营时间:(封浜站 05:30-22:30 | 桂桥路 05:30-22:30）</p>
+				<div style="clear:both"></div>
+			</div>
+<!-- 线路结束-->
+
+
+
+<!-- 线路-->
+			<div class="line-list">
+				<div class="list-title"><a href="/ditie/xl_242.shtml">地铁17号线运营时间</a></div>
+				<ul class="station-li" style="list-style: none">
+				
+				  <li><a href="/ditie/zd_hongqiaohuochezhan.shtml">虹桥火车站</a></li> <li><a href="/ditie/zd_chuguanglu.shtml">褚光路</a></li> <li><a href="/ditie/zd_panlonglu.shtml">蟠龙路</a></li> <li><a href="/ditie/zd_xuyinglu.shtml">徐盈路</a></li> <li><a href="/ditie/zd_xujingbeicheng.shtml">徐泾北城</a></li> <li><a href="/ditie/zd_jiasongzhonglu.shtml">嘉松中路</a></li> <li><a href="/ditie/zd_zhaoxiang.shtml">赵巷</a></li> <li><a href="/ditie/zd_huijinlu.shtml">汇金路</a></li> <li><a href="/ditie/zd_qingpuxincheng.shtml">青浦新城</a></li> <li><a href="/ditie/zd_caoyinglu.shtml">漕盈路</a></li> <li><a href="/ditie/zd_dianshanhudadao.shtml">淀山湖大道</a></li> <li><a href="/ditie/zd_zhoujiajiao.shtml">朱家角</a></li> <li><a href="/ditie/zd_dongfangluezhou.shtml">东方绿舟</a></li>
+				
+				</ul>
+				<div style="clear:both"></div>
+				<p style="margin:10px 0 0 15px;font-size: 12px;color:#009393;">运营时间:(虹桥火车站 6:00-23:00 | 东方绿舟 5:40-22:30）</p>
+				<div style="clear:both"></div>
+			</div>
+<!-- 线路结束-->
+
+
+
+<!-- 线路-->
+			<div class="line-list">
+				<div class="list-title"><a href="/ditie/xl_243.shtml">地铁18号线运营时间</a></div>
+				<ul class="station-li" style="list-style: none">
+				
+				  <li><a href="/ditie/zd_hangtou.shtml">航头</a></li> <li><a href="/ditie/zd_xiasha.shtml">下沙</a></li> <li><a href="/ditie/zd_hetaolu.shtml">鹤涛路</a></li> <li><a href="/ditie/zd_shenmeilu.shtml">沈梅路</a></li> <li><a href="/ditie/zd_fanronglu.shtml">繁荣路</a></li> <li><a href="/ditie/zd_zhoupu.shtml">周浦</a></li> <li><a href="/ditie/zd_kangqiao.shtml">康桥</a></li> <li><a href="/ditie/zd_yuqiao.shtml">御桥</a></li> <li><a href="/ditie/zd_lianxilu.shtml">莲溪路</a></li> <li><a href="/ditie/zd_beizhonglu.shtml">北中路</a></li> <li><a href="/ditie/zd_fangxinlu.shtml">芳芯路</a></li> <li><a href="/ditie/zd_longyanglu.shtml">龙阳路</a></li> <li><a href="/ditie/zd_yingchunlu.shtml">迎春路</a></li> <li><a href="/ditie/zd_yanggaozhonglu.shtml">杨高中路</a></li> <li><a href="/ditie/zd_minshenglu.shtml">民生路</a></li> <li><a href="/ditie/zd_changyilu.shtml">昌邑路</a></li> <li><a href="/ditie/zd_danyanglu.shtml">丹阳路</a></li> <li><a href="/ditie/zd_pinglianglu.shtml">平凉路</a></li> <li><a href="/ditie/zd_jiangpugongyuan.shtml">江浦公园</a></li> <li><a href="/ditie/zd_jiangpulu.shtml">江浦路</a></li> <li><a href="/ditie/zd_fushunlu.shtml">抚顺路</a></li> <li><a href="/ditie/zd_guoquanlu.shtml">国权路</a></li> <li><a href="/ditie/zd_fudandaxue.shtml">复旦大学</a></li> <li><a href="/ditie/zd_shanghaicaijingdaxue.shtml">上海财经大学</a></li> <li><a href="/ditie/zd_yingaolu.shtml">殷高路</a></li> <li><a href="/ditie/zd_changjiangnanlu.shtml">长江南路</a></li>
+				
+				</ul>
+				<div style="clear:both"></div>
+				<p style="margin:10px 0 0 15px;font-size: 12px;color:#009393;">运营时间:(航头 05:30-22:30 | 长江南路 05:55-22:30）</p>
+				<div style="clear:both"></div>
+			</div>
+<!-- 线路结束-->
+
+
+
+<!-- 线路-->
+			<div class="line-list">
+				<div class="list-title"><a href="/ditie/xl_554.shtml">浦江线运营时间</a></div>
+				<ul class="station-li" style="list-style: none">
+				
+				  <li><a href="/ditie/zd_shendugongshe.shtml">沈度公路</a></li> <li><a href="/ditie/zd_sanlugonglu.shtml">三鲁公路</a></li> <li><a href="/ditie/zd_lemruilu.shtml">闵瑞路</a></li> <li><a href="/ditie/zd_puhanglu.shtml">浦航路</a></li> <li><a href="/ditie/zd_dongchengyilu.shtml">东城一路</a></li> <li><a href="/ditie/zd_huizhenlu.shtml">汇臻路</a></li>
+				
+				</ul>
+				<div style="clear:both"></div>
+				<p style="margin:10px 0 0 15px;font-size: 12px;color:#009393;">运营时间:(沈度公路 6:00-22:30 | 汇臻路 5:40-22:10）</p>
+				<div style="clear:both"></div>
+			</div>
+<!-- 线路结束-->
+
+
+
+
+
+
+
+	
+</div>
+
+
+	<!-- footer  -->
+	
+	
+
+
+<div class="cnt">
+
+<div  id="footer"class="row">
+		
+		<div class="col-xm-12"><a href="/">移动版</a> | <a href="http://sh.bendibao.com/">电脑版</a> | <a href="http://sz.bendibao.com/suggest/m_suggest.htm">意见建议</a></div>
+
+	    <div class="col-xm-12"> &copy;Bendibao  粤ICP备06083371号</div>
+	    
+	    
+	    
+	   
+	    
+	</div>
+</div>
+
+
+	
+<center>
+   <script type="text/javascript">
+     var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+     document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fb6435b4f11e7bb5bdd837339bd80f2dc' type='text/javascript'%3E%3C/script%3E"));
+
+    </script>
+</center>
+
+ 
+
+<script>
+
+$(".nav-ditie").addClass("active");
+
+</script>
+
+
+</body>
+</html>
+<!--cache-->
