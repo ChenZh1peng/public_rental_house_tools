@@ -135,7 +135,7 @@ for poi_name in configs['transport']['poi']:
 
     poi_info = {"search_keyword": poi_name}
 
-    amap_search_result = get_keyword_search_result(amap, poi_name, logger)
+    amap_search_result = get_keyword_search_result(amap, poi_name, logger, sub_dir='pudong')
     poi_result = amap_search_result['pois'][amap_search_result['select']]
 
     poi_info.update({
@@ -145,7 +145,7 @@ for poi_name in configs['transport']['poi']:
     pois.append(poi_info)
 
 for item in tqdm(result, total=len(result), desc="正在处理今日关注房源"):
-    item_search_result = get_keyword_search_result(amap, item['name'], logger)
+    item_search_result = get_keyword_search_result(amap, item['name'], logger, sub_dir='pudong')
     item_search_result = item_search_result['pois'][item_search_result['select']]
     item_lon_lat_str = item_search_result['navi']['entr_location'] if 'entr_location' in item_search_result['navi'].keys() else item_search_result['navi']['exit_location'] if 'exit_location' in item_search_result['navi'].keys() else item_search_result['location']
     for poi in pois:

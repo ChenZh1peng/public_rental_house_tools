@@ -124,7 +124,7 @@ try:
 
         poi_info = {"search_keyword": poi_name, "time_limit": time_limit}
 
-        amap_search_result = get_keyword_search_result(amap, poi_name, logger)
+        amap_search_result = get_keyword_search_result(amap, poi_name, logger, sub_dir='pudong')
         poi_result = amap_search_result['pois'][amap_search_result['select']]
 
         poi_info.update({
@@ -195,7 +195,7 @@ try:
                 logger.warning(f"公租房官方数据有误，使用高德数据，建议在官网确认该小区的有效性：{each_project_result['name']}")
                 print(f"\033[33m提醒：公租房官方数据有误，使用高德数据，建议在官网确认该小区的有效性：{each_project_result['name']}\033[0m")
 
-                amap_search_result = get_keyword_search_result(amap, each_project_result['name'], logger)
+                amap_search_result = get_keyword_search_result(amap, each_project_result['name'], logger, sub_dir='pudong')
                 LON_LAT_STR = amap_search_result['pois'][amap_search_result['select']]['location']
             else:
                 LON_LAT_STR = str(lon_lat_pair[0]) + ',' + str(lon_lat_pair[1])

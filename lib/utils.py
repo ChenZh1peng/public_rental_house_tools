@@ -19,7 +19,7 @@ def join_url(url1, url2):
     if url1_suffix_slash and url2_prefix_slash:
         return url1.rstrip('/') + url2
 
-def get_keyword_search_result(amap, keyword, logger=None):
+def get_keyword_search_result(amap, keyword, sub_dir="", logger=None):
         """get result from file cache or amap api
 
         Args:
@@ -33,7 +33,7 @@ def get_keyword_search_result(amap, keyword, logger=None):
         """
         # for safety of name becomming part of path
         keyword = keyword.replace('/', '_')
-        data_dir = os.path.join(os.getcwd(), "data", "pudong")
+        data_dir = os.path.join(os.getcwd(), "data", sub_dir)
         if not os.path.exists(data_dir):
             os.makedirs(data_dir)
         filename = keyword + '.json'
